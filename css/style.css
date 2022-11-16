@@ -330,7 +330,7 @@ picture img {
 }
 
 .nmd-share-buttons__toggler--on:before {
-    background-color: #cb4042;
+    /* background-color: #cb4042; */
     -webkit-clip-path: circle(50% at 50% 50%);
     clip-path: circle(50% at 50% 50%);
     content: "";
