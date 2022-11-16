@@ -107,6 +107,22 @@ svg {
     color: #fff;
 }
 
+#nmd-header__subscribe_mob {
+    display: none;
+}
+
+@media screen and (max-width:375px) { 
+    #nmd-header__subscribe_mob {
+        display: inline-block;
+    }
+    #nmd-header__subscribe_mob:hover{
+        background-color: #cb2529;
+    }
+    #nmd-header__subscribe_pc {
+        display: none;
+    }
+  }
+
 .nmd-header__subscribe:hover {
     background-color: #cb2529;
 }
@@ -167,7 +183,7 @@ picture img {
     animation: text 5s  ease-in-out infinite;
 }
 .public-hero-sec__scroll-down__text[data-v-12b9f478] {
-    color: #fafafa;
+    color: #fff;
     grid-area: 1/1/2/3;
     margin: 0 auto;
     text-align: center;
@@ -191,7 +207,7 @@ picture img {
 
 
 .public-hero-sec__scroll-down__left[data-v-12b9f478] {
-    border-right: 1px solid #f1f1f1;
+    border-right: 1px solid #fff;
     text-shadow: 0 0 5px #000;
     grid-area: 2/1/3/2;
 }
