@@ -9,7 +9,6 @@ body {
     height: 100%;
     background-color: #fafafa;
     -webkit-overflow-scrolling: touch;
-
 }
 
 .article-story-content p {
@@ -308,7 +307,7 @@ h2 {
     margin: 0;
     padding: 0;
     color: #ffffff;
-    text-shadow: #3E3A39 0.1em 0.1em 1.5em;
+    /* text-shadow: #3E3A39 0.1em 0.1em 1.5em; */
 
 
 }
@@ -346,7 +345,7 @@ h3 {
     padding: 0;
     font-weight: normal;
     color: #ffffff;
-    text-shadow: #3E3A39 0.1em 0.1em 1.5em;
+    /* text-shadow: #3E3A39 0.1em 0.1em 1.5em; */
 
 }
 
@@ -358,7 +357,7 @@ h3 {
         font-size: 30px;
         line-height: 40px;
         color: #ffffff;
-        text-shadow: #3E3A39 0.1em 0.1em 1.5em;
+        /* text-shadow: #3E3A39 0.1em 0.1em 1.5em; */
 
     }
 
@@ -372,8 +371,7 @@ h3 {
         font-size: 26px;
         line-height: 36px;
         color: #ffffff;
-        text-shadow: #3E3A39 0.1em 0.1em 1.5em;
-
+        /* text-shadow: #3E3A39 0.1em 0.1em 1.5em; */
     }
 
 }
@@ -437,7 +435,7 @@ p {
 
 }
 
-/* pè¦æ ¼ - phone ( iphone 6/7/8 plus  &  iPhone XS Max  &  iPhone 11 Pro Max  )  */
+/*phone ( iphone 6/7/8 plus  &  iPhone XS Max  &  iPhone 11 Pro Max  )  */
 
 @media all and (max-width: 414px) {
 
@@ -449,7 +447,7 @@ p {
 }
 
 
-/* p-äººç‰©é‡‘å¥ è¦æ ¼ - web pad  */
+/* web pad  */
 
 p.quote-motto {
     font-size: 30px;
@@ -459,7 +457,7 @@ p.quote-motto {
 
 }
 
-/* p-äººç‰©é‡‘å¥ è¦æ ¼ - phone  */
+/*phone  */
 
 @media all and (min-width:429px) and (max-width: 768px) {
 
@@ -484,7 +482,7 @@ p.quote-motto {
 }
 
 
-/* p-äººç‰©é ­éŠœ è¦æ ¼ - web pad  */
+/* web pad  */
 
 p.quote-name {
     font-size: 21px;
@@ -494,7 +492,7 @@ p.quote-name {
     text-align: right;
 }
 
-/* p-äººç‰©é ­éŠœ è¦æ ¼ - phone  */
+/* phone  */
 
 @media all and (min-width:429px) and (max-width: 768px) {
 
@@ -504,7 +502,7 @@ p.quote-name {
 
 }
 
-/* p-äººç‰©é ­éŠœ - phone ( iPhone 12 Pro Max )  */
+/* phone ( iPhone 12 Pro Max )  */
 
 @media all and (max-width: 428px) {
 
@@ -516,7 +514,7 @@ p.quote-name {
 
 }
 
-/* p-äººç‰©é ­éŠœ - phone ( iphone 6/7/8 plus  &  iPhone XS Max  &  iPhone 11 Pro Max  )  */
+/*phone ( iphone 6/7/8 plus  &  iPhone XS Max  &  iPhone 11 Pro Max  )  */
 
 @media all and (max-width: 414px) {
 
@@ -529,7 +527,7 @@ p.quote-name {
 }
 
 
-/* p-banner è¦æ ¼ - web */
+/* p-banner- web */
 
 p.banner-title,
 p.banner-content {
@@ -539,7 +537,7 @@ p.banner-content {
 
 }
 
-/* p-banner è¦æ ¼ - pad  */
+/* p-banner - pad  */
 
 @media all and (max-width: 768px) {
 
@@ -552,7 +550,7 @@ p.banner-content {
 
 }
 
-/* p-banner è¦æ ¼ - phone ( iPhone 12 Pro Max )  */
+/* p-banner- phone ( iPhone 12 Pro Max )  */
 
 @media all and (max-width: 428px) {
 
@@ -565,7 +563,7 @@ p.banner-content {
 }
 
 
-/* p-å»¶ä¼¸é–±è®€ è¦æ ¼ - web pad  */
+/* p - web pad  */
 
 p.further-reading {
     font-size: 16px;
@@ -605,7 +603,7 @@ figcaption {
 
 }
 
-/* figcaption-åœ–èªª è¦æ ¼ - phone  */
+/* figcaption-å- phone  */
 
 @media all and (max-width:360px) {
     figcaption {
@@ -614,14 +612,14 @@ figcaption {
     }
 }
 
-/* figcaption-è¼ªæ’­åœ–èªª è¦æ ¼ */
+/* figcaption */
 
 figcaption.swiper-fig {
     margin-bottom: 40px;
 }
 
 
-/* span-è£½ä½œç¾¤ è¦æ ¼ - web pad phone */
+/* span- web pad phone */
 
 span.producer {
     font-size: 15px;
@@ -641,8 +639,6 @@ p.footer-coryright {
     padding: 0;
 
 }
-
-/* åœ–ç‰‡è¦æ ¼ */
 
 img {
     display: block;
