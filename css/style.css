@@ -113,7 +113,8 @@ svg {
 
 @media screen and (max-width:375px) { 
     #nmd-header__subscribe_mob {
-        display: inline-block;
+        display: block;
+        padding: 5 11px;
     }
     #nmd-header__subscribe_mob:hover{
         background-color: #cb2529;
