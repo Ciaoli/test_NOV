@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Noto Serif TC", source-han-serif-tc, serif;
+    background-color: #fafafa;
+}
+
+img {
+    display: block;
+}
+
+.top-full-bac {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../images/test_bg.webp') no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 0;
+    position: relative;
+}
+
+/* @media all and (max-width: 768px) {
+
+    .top-full-banner {
+
+        background: url(../img/bg_mobile.jpg) no-repeat;
+        background-position: center center;
+        background-size: cover;
+
+    }
+} */

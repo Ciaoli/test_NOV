@@ -114,7 +114,7 @@ svg {
 @media screen and (max-width:375px) { 
     #nmd-header__subscribe_mob {
         display: block;
-        padding: 5 11px;
+        padding: 5px 11px;
     }
     #nmd-header__subscribe_mob:hover{
         background-color: #cb2529;
@@ -231,7 +231,7 @@ picture img {
     top: 0;
     transition: transform .25s;
     width: 100%;
-    z-index: 9998
+    z-index: 9998;
 }
 
 .nmd-header-nav {

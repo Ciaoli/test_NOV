@@ -1,0 +1,150 @@
+.full-fixed {
+    width: 100%;
+    height: 100vh;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    z-index: -1;
+
+
+}
+
+.article-full-fixed {
+    height: 100%;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.fixd-background-img {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.fixd-background-img img {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    transform: translateZ(0);
+}
+
+
+
+.article-full-fixed .title-box {
+    text-align: left;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+
+
+}
+
+@media all and (max-width: 768px) {
+
+    .article-full-fixed .title-box {
+        width: 480px;
+
+    }
+
+}
+
+@media all and (min-width:500px) and (max-width:549px) {
+
+    .article-full-fixed .title-box {
+        width: 420px;
+
+    }
+
+}
+
+@media all and (min-width:450px) and (max-width:499px) {
+
+    .article-full-fixed .title-box {
+        width: 390px;
+
+    }
+
+}
+
+/* iPhone 12 Pro Max 428px */
+@media all and (min-width:428px) and (max-width:449px) {
+
+    .article-full-fixed .title-box {
+        width: 340px;
+
+    }
+
+}
+
+/* iphone 6/7/8 plus  &  iPhone XS Max  &  iPhone 11 Pro Max 414px */
+@media all and (min-width:414px) and (max-width:427px) {
+
+    .article-full-fixed .title-box {
+        width: 330px;
+
+    }
+
+}
+
+/* iphone 12 & iphone 12Pro  390px */
+@media all and (min-width:390px) and (max-width:413px) {
+
+    .article-full-fixed .title-box {
+        width: 330px;
+
+    }
+
+}
+
+/* iphone X  &  iphone 6/7/8  &  iPhone 11 Pro  375px*/
+@media all and (min-width:375px) and (max-width:413px) {
+
+    .article-full-fixed .title-box {
+        width: 300px;
+
+    }
+
+}
+
+/* iphone 12 mini  360px*/
+@media all and (min-width:360px) and (max-width:374px) {
+
+    .article-full-fixed .title-box {
+        width: 280px;
+
+    }
+
+}
+
+@media all and (min-width:321px) and (max-width:359px) {
+
+    .article-full-fixed .title-box {
+        width: 270px;
+
+    }
+}
+
+/* 320px */
+@media all and (max-width:320px) {
+
+    .article-full-fixed .title-box {
+        width: 260px;
+
+    }
+}
