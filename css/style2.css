@@ -241,7 +241,7 @@ section {
     width: 100%;
     height: 100%;
     margin: 0 auto;
-    padding: 50px 0;
+    padding: 0 0;
     background: #fafafa;
 
 }
@@ -266,8 +266,6 @@ h1 {
     padding: 0;
     font-weight: bold;
     color: #ffffff;
-    text-shadow: #3E3A39 0.1em 0.1em 1.5em;
-
 }
 
 /* h1è¦æ ¼ - phone ( iPhone 12 Pro Max ) */
@@ -278,9 +276,7 @@ h1 {
         font-size: 45px;
         line-height: 60px;
         color: #ffffff;
-        text-shadow: #3E3A39 0.1em 0.1em 1.5em;
-
-    }
+   }
 
 }
 
@@ -292,7 +288,6 @@ h1 {
         font-size: 40px;
         line-height: 50px;
         color: #ffffff;
-        text-shadow: #3E3A39 0.1em 0.1em 1.5em;
 
     }
 
@@ -572,7 +567,7 @@ p.further-reading {
     padding: 0;
 }
 
-/* p-å»¶ä¼¸é–±è®€ è¦æ ¼ - phone ( iPhone 12 Pro Max )  */
+/* p- phone ( iPhone 12 Pro Max )  */
 
 @media all and (max-width: 428px) {
 
@@ -583,7 +578,7 @@ p.further-reading {
 }
 
 
-/* figure-åœ–èªªåœ–ç‰‡ è¦æ ¼ */
+/* figure */
 
 figure {
     display: block;
@@ -591,7 +586,7 @@ figure {
     margin: auto;
 }
 
-/* figcaption-åœ–èªª è¦æ ¼ - web pad  */
+/* figcaption- web pad  */
 
 figcaption {
     font-size: 17px;
@@ -630,7 +625,7 @@ span.producer {
 }
 
 
-/* p-footer Coryright è¦æ ¼ - web pad phone */
+/* p-footer Coryrigt - web pad phone */
 
 p.footer-coryright {
     font-size: 15px;

@@ -81,3 +81,8 @@
         padding: 5px 20px;
     }
 }
+
+.parallax-sec01__text-box h3{
+    color: #fff;
+    letter-spacing: 3px;
+}

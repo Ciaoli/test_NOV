@@ -20,7 +20,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('../images/test_bg.webp') no-repeat;
+    background: url('images/test_bg.webp') no-repeat;
     background-position: center center;
     background-size: cover;
     padding: 0;

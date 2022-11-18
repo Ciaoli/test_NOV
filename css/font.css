@@ -1,0 +1,488 @@
+p {
+    width: 620px;
+    font-family: 'Noto Sans TC', sans-serif, '微軟正黑體';
+    font-size: 18px;
+    line-height: 36px;
+    font-weight: 400;
+    margin: 0 auto;
+    color: #404040;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-align: left;
+    font-family: 'Noto Serif TC', serif, '微軟正黑體';
+    width: 620px;
+    font-weight: 700;
+    margin: 0 auto;
+    color: #404040;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 68px;
+}
+
+h2 {
+    font-size: 42px;
+    line-height: 56px;
+}
+
+h3 {
+    font-size: 32px;
+    line-height: 48px;
+}
+
+h4 {
+    font-size: 28px;
+    line-height: 46px;
+}
+
+h5 {
+    font-size: 20px;
+    line-height: 32px;
+}
+
+h6 {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/* #title_mob h1 {
+    font-size: 36px;
+    line-height: 46px;
+}
+
+#title_mob h2 {
+    font-size: 32px;
+    line-height: 46px;
+}
+
+#title_mob h3 {
+    font-size: 28px;
+    line-height: 40px;
+}
+
+#title_mob h4 {
+    font-size: 22px;
+    line-height: 36px;
+}
+
+#title_mob h5 {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+#title_mob h6 {
+    font-size: 16px;
+    line-height: 24px;
+} */
+
+#note {
+    width: 620px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+    margin: 0 auto;
+    margin-top: 6px;
+    color: #404040;
+}
+
+/* 標題 內容 RWD */
+
+@media all and (max-width: 768px) {
+
+    .article-full-fixed,
+    .title-box,
+    .container-box {
+        width: 530px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .title-box h2,
+    .title-box h3 {
+        width: 530px;
+    }
+
+    p,
+    #note {
+        width: 530px;
+    }
+
+    figure,
+    #pic_note {
+        width: 530px;
+        margin: 0 auto;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+        text-align: left;
+        margin: 0 auto;
+    }
+
+}
+
+@media all and (min-width:500px) and (max-width:549px) {
+
+    .article-full-fixed,
+    .title-box,
+    .container-box {
+        width: 420px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .title-box h2,
+    .title-box h3 {
+        width: 420px;
+    }
+
+    p,
+    #note {
+        width: 420px;
+    }
+
+    figure,
+    #pic_note {
+        width: 420px;
+        margin: 0 auto;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+        margin: 0 auto;
+        text-align: left;
+    }
+
+}
+
+@media all and (min-width:450px) and (max-width:499px) {
+
+    .article-full-fixed,
+    .title-box,
+    .container-box {
+        width: 390px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .title-box h2,
+    .title-box h3 {
+        width: 390px;
+    }
+
+    p,
+    #note {
+        width: 390px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    figure,
+    #pic_note {
+        width: 390px;
+        margin: 0 auto;
+    }
+
+}
+
+/* iPhone 12 Pro Max 428px */
+@media all and (min-width:428px) and (max-width:449px) {
+
+    .article-full-fixed,
+    .title-box,
+    .container-box {
+        width: 340px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+
+    .title-box h2,
+    .title-box h3 {
+        width: 340px;
+    }
+
+    p,
+    #note {
+        width: 340px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    figure,
+    #pic_note {
+        width: 340px;
+    }
+
+}
+
+/* iphone 6/7/8 plus  &  iPhone XS Max  &  iPhone 11 Pro Max 414px */
+@media all and (min-width:414px) and (max-width:427px) {
+
+    .article-full-fixed,
+    .title-box,
+    .container-box {
+        width: 362px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+
+    .title-box h2,
+    .title-box h3 {
+        width: 362px;
+    }
+
+    p,
+    #note {
+        width: 362px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    figure,
+    #pic_note {
+        width: 362px;
+    }
+}
+
+/* iphone 12 & iphone 12Pro  390px */
+@media all and (min-width:390px) and (max-width:413px) {
+
+    .article-full-fixed,
+    .title-box,
+    .container-box {
+        width: 362px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .title-box h2,
+    .title-box h3 {
+        width: 362px;
+    }
+
+    p,
+    #note {
+        width: 362px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    figure,
+    #pic_note {
+        width: 362px;
+        margin: 0 auto;
+    }
+
+}
+
+/* iphone X  &  iphone 6/7/8  &  iPhone 11 Pro  375px*/
+@media all and (min-width:375px) and (max-width:413px) {
+
+    .article-full-fixed,
+    .title-box,
+    .container-box {
+        width: 362px;
+        text-align: center;
+    }
+
+    .title-box h2,
+    .title-box h3 {
+        width: 362px;
+    }
+
+    p,
+    #note {
+        width: 362px;
+    }
+
+    figure,
+    #pic_note {
+        width: 362px;
+        margin: 0 auto;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+        margin: 0 auto;
+        text-align: left;
+    }
+
+}
+
+/* iphone 12 mini  360px*/
+@media all and (min-width:360px) and (max-width:374px) {
+
+    .article-full-fixed,
+    .title-box,
+    .container-box {
+        text-align: center;
+        width: 280px;
+    }
+
+    .title-box h2,
+    .title-box h3 {
+        width: 280px;
+    }
+
+    p,
+    #note {
+        width: 280px;
+    }
+
+    figure,
+    #pic_note {
+        width: 280px;
+        margin: 0 auto;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+        margin: 0 auto;
+        text-align-last: left;
+    }
+
+}
+
+@media all and (min-width:321px) and (max-width:359px) {
+
+    .article-full-fixed,
+    .title-box,
+    .container-box {
+        text-align: center;
+        width: 280px;
+        margin: 0 auto;
+    }
+
+    .title-box h2,
+    .title-box h3 {
+        width: 280px;
+    }
+
+    p,
+    #note {
+        width: 280px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    figure,
+    #pic_note {
+        width: 280px;
+        margin: 0 auto;
+    }
+
+}
+
+/* 320px */
+@media all and (max-width:320px) {
+
+    .article-full-fixed,
+    .title-box,
+    .container-box {
+        text-align: center;
+        margin: 0 auto;
+        width: 280px;
+    }
+
+    .title-box h2,
+    .title-box h3 {
+        width: 280px;
+    }
+
+    p,
+    #note {
+        width: 280px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    figure,
+    #pic_note {
+        width: 280px;
+        margin: 0 auto;
+    }
+
+}
