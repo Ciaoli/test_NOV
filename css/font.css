@@ -105,7 +105,8 @@ h6 {
     }
 
     .title-box h2,
-    .title-box h3 {
+    .title-box h3,
+    .container-box h3 {
         width: 530px;
     }
 
@@ -144,7 +145,8 @@ h6 {
     }
 
     .title-box h2,
-    .title-box h3 {
+    .title-box h3,
+    .container-box h3 {
         width: 420px;
     }
 
@@ -183,7 +185,8 @@ h6 {
     }
 
     .title-box h2,
-    .title-box h3 {
+    .title-box h3,
+    .container-box h3 {
         width: 390px;
     }
 
@@ -224,7 +227,8 @@ h6 {
 
 
     .title-box h2,
-    .title-box h3 {
+    .title-box h3,
+    .container-box h3 {
         width: 340px;
     }
 
@@ -302,7 +306,7 @@ h6 {
     }
 
     .title-box h2,
-    .title-box h3 {
+    .title-box h3 .container-box h3 {
         width: 362px;
     }
 
@@ -341,7 +345,8 @@ h6 {
     }
 
     .title-box h2,
-    .title-box h3 {
+    .title-box h3,
+    .container-box h3 {
         width: 362px;
     }
 
@@ -380,7 +385,8 @@ h6 {
     }
 
     .title-box h2,
-    .title-box h3 {
+    .title-box h3,
+    .container-box h3 {
         width: 280px;
     }
 
@@ -419,7 +425,8 @@ h6 {
     }
 
     .title-box h2,
-    .title-box h3 {
+    .title-box h3,
+    .container-box h3 {
         width: 280px;
     }
 
@@ -459,7 +466,8 @@ h6 {
     }
 
     .title-box h2,
-    .title-box h3 {
+    .title-box h3,
+    .container-box h3 {
         width: 280px;
     }
 
