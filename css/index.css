@@ -259,6 +259,12 @@ section#fullParallax>div {
     display: none
 }
 
+/* flourish 圖表 */
+#chart {
+    width: 620px;
+    margin: 0 auto;
+}
+
 @media screen and (min-width: 1024px) {
     .parallax-sec01__text-box .parallax-sec01__space {
         display: inline;
@@ -269,6 +275,7 @@ section#fullParallax>div {
     .parallax-sec01__text-box {
         max-width: calc(100vw - 298px);
     }
+
 }
 
 @media screen and (min-width: 375.02px) and (max-width:767.98px) {
@@ -293,12 +300,17 @@ section#fullParallax>div {
         width: 530px;
         text-align: left;
     }
+
+    #chart {
+        width: 530px;
+    }
 }
 
 @media all and (min-width:500px) and (max-width:549px) {
 
     .article-full-fixed .title-box,
-    #key-num {
+    #key-num,
+    #chart {
         width: 362px;
     }
 }
@@ -306,7 +318,8 @@ section#fullParallax>div {
 @media all and (min-width:450px) and (max-width:499px) {
 
     .article-full-fixed .title-box,
-    #key-num {
+    #key-num,
+    #chart {
         width: 362px;
     }
 }
@@ -315,7 +328,8 @@ section#fullParallax>div {
 @media all and (min-width:428px) and (max-width:449px) {
 
     .article-full-fixed .title-box,
-    #key-num {
+    #key-num,
+    #chart {
         width: 280px;
     }
 }
@@ -324,7 +338,8 @@ section#fullParallax>div {
 @media all and (min-width:414px) and (max-width:427px) {
 
     .article-full-fixed .title-box,
-    #key-num {
+    #key-num,
+    #chart {
         width: 280px;
     }
 }
@@ -333,7 +348,8 @@ section#fullParallax>div {
 @media all and (min-width:390px) and (max-width:413px) {
 
     .article-full-fixed .title-box,
-    #key-num {
+    #key-num,
+    #chart {
         width: 280px;
     }
 }
@@ -342,7 +358,8 @@ section#fullParallax>div {
 @media all and (min-width:375px) and (max-width:413px) {
 
     .article-full-fixed .title-box,
-    #key-num {
+    #key-num,
+    #chart {
         width: 280px;
     }
 }
@@ -352,7 +369,7 @@ section#fullParallax>div {
 
     .article-full-fixed .title-box,
     #key-num,
-    #key-num {
+    #chart {
         width: 280px;
     }
 }
@@ -360,7 +377,8 @@ section#fullParallax>div {
 @media all and (min-width:321px) and (max-width:359px) {
 
     .article-full-fixed .title-box,
-    #key-num {
+    #key-num,
+    #chart {
         width: 270px;
     }
 }
@@ -369,7 +387,8 @@ section#fullParallax>div {
 @media all and (max-width:320px) {
 
     .article-full-fixed .title-box,
-    #key-num {
+    #key-num,
+    #chart {
         width: 260px;
     }
 }
@@ -792,7 +811,8 @@ section#fullParallax>div {
     color: #fff;
     transition: .5s;
 }
-.nmd-header__subscribe a:hover{
+
+.nmd-header__subscribe a:hover {
     background-color: #cb2529;
 }
 
@@ -837,18 +857,23 @@ section#fullParallax>div {
     16.65% {
         transform: translateY(6px)
     }
+
     33.33% {
         transform: translateY(-5px)
     }
+
     49.95% {
         transform: translateY(4px)
     }
+
     66.6% {
         transform: translateY(-2px)
     }
+
     83.25% {
         transform: translateY(1px)
     }
+
     to {
         transform: translateY(0)
     }
@@ -858,18 +883,23 @@ section#fullParallax>div {
     16.65% {
         transform: translateY(6px)
     }
+
     33.33% {
         transform: translateY(-5px)
     }
+
     49.95% {
         transform: translateY(4px)
     }
+
     66.6% {
         transform: translateY(-2px)
     }
+
     83.25% {
         transform: translateY(1px)
     }
+
     to {
         transform: translateY(0)
     }
