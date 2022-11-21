@@ -2,12 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Noto Sans TC', sans-serif, '微軟正黑體';
 }
 
 html,
 body {
     height: 100%;
-    background-color: #fafafa;
+    background-color: #f0f0f0;
     -webkit-overflow-scrolling: touch;
 }
 
@@ -100,94 +101,98 @@ body {
     transform: translate(-50%, -50%);
 }
 
+#key-num{
+    width: 620px;
+    margin: 0 auto;
+    justify-content: center;
+    letter-spacing: 2px;
+    color: #D600D6;
+}
+
+.key-num1 {
+    font-weight: 700;
+    font-size: 48px;
+}
+
+.key-num2 {
+    font-weight: 400;
+    font-size: 24px;
+}
+
 /* 滿版滾動視差RWD */
 @media all and (max-width: 768px) {
 
-    .article-full-fixed .title-box {
-        width: 480px;
-
+    .article-full-fixed .title-box , #key-num{
+        width: 530px;
+        text-align: left;
     }
 }
 
 @media all and (min-width:500px) and (max-width:549px) {
 
-    .article-full-fixed .title-box {
-        width: 420px;
-
+    .article-full-fixed .title-box ,#key-num {
+        width: 362px;   
     }
-
 }
 
 @media all and (min-width:450px) and (max-width:499px) {
 
-    .article-full-fixed .title-box {
-        width: 390px;
-
+    .article-full-fixed .title-box,#key-num {
+        width: 362px;
     }
-
 }
 
 /* iPhone 12 Pro Max 428px */
 @media all and (min-width:428px) and (max-width:449px) {
 
-    .article-full-fixed .title-box {
-        width: 340px;
-
+    .article-full-fixed .title-box,#key-num {
+        width: 280px;
     }
 }
 
 /* iphone 6/7/8 plus  &  iPhone XS Max  &  iPhone 11 Pro Max 414px */
 @media all and (min-width:414px) and (max-width:427px) {
 
-    .article-full-fixed .title-box {
-        width: 330px;
-
+    .article-full-fixed .title-box,#key-num {
+        width: 280px;
     }
 }
 
 /* iphone 12 & iphone 12Pro  390px */
 @media all and (min-width:390px) and (max-width:413px) {
 
-    .article-full-fixed .title-box {
-        width: 330px;
-
+    .article-full-fixed .title-box,#key-num {
+        width: 280px;
     }
-
 }
 
 /* iphone X  &  iphone 6/7/8  &  iPhone 11 Pro  375px*/
 @media all and (min-width:375px) and (max-width:413px) {
 
-    .article-full-fixed .title-box {
-        width: 300px;
-
+    .article-full-fixed .title-box,#key-num {
+        width: 280px;
     }
-
 }
 
 /* iphone 12 mini  360px*/
 @media all and (min-width:360px) and (max-width:374px) {
 
-    .article-full-fixed .title-box {
+    .article-full-fixed .title-box,#key-num,#key-num {
         width: 280px;
-
     }
 }
 
 @media all and (min-width:321px) and (max-width:359px) {
 
-    .article-full-fixed .title-box {
+    .article-full-fixed .title-box,#key-num {
         width: 270px;
-
     }
 }
 
 /* 320px */
 @media all and (max-width:320px) {
 
-    .article-full-fixed .title-box {
+    .article-full-fixed .title-box,#key-num {
         width: 260px;
-
     }
-
 }

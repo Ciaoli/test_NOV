@@ -127,7 +127,8 @@ h6 {
     h4,
     h5,
     h6,
-    p {
+    p,
+    span {
         text-align: left;
         margin: 0 auto;
     }
@@ -139,7 +140,7 @@ h6 {
     .article-full-fixed,
     .title-box,
     .container-box {
-        width: 420px;
+        width: 362px;
         text-align: center;
         margin: 0 auto;
     }
@@ -147,17 +148,17 @@ h6 {
     .title-box h2,
     .title-box h3,
     .container-box h3 {
-        width: 420px;
+        width: 362px;
     }
 
     p,
     #note {
-        width: 420px;
+        width: 362px;
     }
 
     figure,
     #pic_note {
-        width: 420px;
+        width: 362px;
         margin: 0 auto;
     }
 
@@ -167,7 +168,8 @@ h6 {
     h4,
     h5,
     h6,
-    p {
+    p,
+    span {
         margin: 0 auto;
         text-align: left;
     }
@@ -179,7 +181,7 @@ h6 {
     .article-full-fixed,
     .title-box,
     .container-box {
-        width: 390px;
+        width: 362px;
         text-align: center;
         margin: 0 auto;
     }
@@ -187,12 +189,12 @@ h6 {
     .title-box h2,
     .title-box h3,
     .container-box h3 {
-        width: 390px;
+        width: 362px;
     }
 
     p,
     #note {
-        width: 390px;
+        width: 362px;
     }
 
     h1,
@@ -201,14 +203,15 @@ h6 {
     h4,
     h5,
     h6,
-    p {
+    p,
+    span {
         margin: 0 auto;
         text-align: left;
     }
 
     figure,
     #pic_note {
-        width: 390px;
+        width: 362px;
         margin: 0 auto;
     }
 
@@ -220,7 +223,7 @@ h6 {
     .article-full-fixed,
     .title-box,
     .container-box {
-        width: 340px;
+        width: 280px;
         text-align: center;
         margin: 0 auto;
     }
@@ -229,12 +232,12 @@ h6 {
     .title-box h2,
     .title-box h3,
     .container-box h3 {
-        width: 340px;
+        width: 280px;
     }
 
     p,
     #note {
-        width: 340px;
+        width: 280px;
     }
 
     h1,
@@ -243,14 +246,15 @@ h6 {
     h4,
     h5,
     h6,
-    p {
+    p,
+    span {
         margin: 0 auto;
         text-align: left;
     }
 
     figure,
     #pic_note {
-        width: 340px;
+        width: 280px;
     }
 
 }
@@ -261,7 +265,7 @@ h6 {
     .article-full-fixed,
     .title-box,
     .container-box {
-        width: 362px;
+        width: 280px;
         text-align: center;
         margin: 0 auto;
     }
@@ -269,12 +273,12 @@ h6 {
 
     .title-box h2,
     .title-box h3 {
-        width: 362px;
+        width: 280px;
     }
 
     p,
     #note {
-        width: 362px;
+        width: 280px;
     }
 
     h1,
@@ -283,14 +287,15 @@ h6 {
     h4,
     h5,
     h6,
-    p {
+    p,
+    span {
         margin: 0 auto;
         text-align: left;
     }
 
     figure,
     #pic_note {
-        width: 362px;
+        width: 280px;
     }
 }
 
@@ -300,19 +305,19 @@ h6 {
     .article-full-fixed,
     .title-box,
     .container-box {
-        width: 362px;
+        width: 280px;
         text-align: center;
         margin: 0 auto;
     }
 
     .title-box h2,
     .title-box h3 .container-box h3 {
-        width: 362px;
+        width: 280px;
     }
 
     p,
     #note {
-        width: 362px;
+        width: 280px;
     }
 
     h1,
@@ -321,14 +326,15 @@ h6 {
     h4,
     h5,
     h6,
-    p {
+    p,
+    span {
         margin: 0 auto;
         text-align: left;
     }
 
     figure,
     #pic_note {
-        width: 362px;
+        width: 280px;
         margin: 0 auto;
     }
 
@@ -340,24 +346,24 @@ h6 {
     .article-full-fixed,
     .title-box,
     .container-box {
-        width: 362px;
+        width: 280px;
         text-align: center;
     }
 
     .title-box h2,
     .title-box h3,
     .container-box h3 {
-        width: 362px;
+        width: 280px;
     }
 
     p,
     #note {
-        width: 362px;
+        width: 280px;
     }
 
     figure,
     #pic_note {
-        width: 362px;
+        width: 280px;
         margin: 0 auto;
     }
 
@@ -367,7 +373,8 @@ h6 {
     h4,
     h5,
     h6,
-    p {
+    p,
+    span {
         margin: 0 auto;
         text-align: left;
     }
@@ -407,7 +414,8 @@ h6 {
     h4,
     h5,
     h6,
-    p {
+    p,
+    span {
         margin: 0 auto;
         text-align-last: left;
     }
@@ -420,19 +428,19 @@ h6 {
     .title-box,
     .container-box {
         text-align: center;
-        width: 280px;
+        width: 270px;
         margin: 0 auto;
     }
 
     .title-box h2,
     .title-box h3,
     .container-box h3 {
-        width: 280px;
+        width: 270px;
     }
 
     p,
     #note {
-        width: 280px;
+        width: 270px;
     }
 
     h1,
@@ -441,14 +449,15 @@ h6 {
     h4,
     h5,
     h6,
-    p {
+    p,
+    span {
         margin: 0 auto;
         text-align: left;
     }
 
     figure,
     #pic_note {
-        width: 280px;
+        width: 270px;
         margin: 0 auto;
     }
 
@@ -462,18 +471,18 @@ h6 {
     .container-box {
         text-align: center;
         margin: 0 auto;
-        width: 280px;
+        width: 260px;
     }
 
     .title-box h2,
     .title-box h3,
     .container-box h3 {
-        width: 280px;
+        width: 260px;
     }
 
     p,
     #note {
-        width: 280px;
+        width: 260px;
     }
 
     h1,
@@ -482,14 +491,15 @@ h6 {
     h4,
     h5,
     h6,
-    p {
+    p,
+    span {
         margin: 0 auto;
         text-align: left;
     }
 
     figure,
     #pic_note {
-        width: 280px;
+        width: 260px;
         margin: 0 auto;
     }
 
