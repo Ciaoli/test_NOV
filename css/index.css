@@ -12,7 +12,56 @@ body {
     -webkit-overflow-scrolling: touch;
 }
 
+a {
+    text-decoration: none;
+    color: #222;
+}
+.nmd-menu-wrapper {
+    height: 100%;
+    width: 100%;
+    background-color: #f0f0f0;
+    display: none;
+}
+
 /* header */
+.nmd-header {
+    background-color: #222;
+    height: 60px;
+    width: 100%;
+}
+
+.nmd-header-nav {
+    display: flex;
+    clear: both;
+    justify-content: space-between;
+    align-items: stretch;
+    color: #fff;
+}
+
+.nav-left {
+    padding-top: 16px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.nav-right {
+    padding-top: 10px;
+    padding-right: 20px;
+}
+
+.nav-right svg {
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.nav-left a{
+    transition: .5s;
+}
+
+.nav-left a:hover{
+    filter: opacity(.8) brightness(1.5);
+}
+
 
 /* 首屏滿版大圖 */
 .top-full-bac {
@@ -32,7 +81,7 @@ body {
 
 .title-box {
     position: absolute;
-    top:20%;
+    top: 20%;
     left: 40%;
     transform: translate(-50%, -50%);
 }
@@ -46,6 +95,7 @@ body {
     letter-spacing: 3px;
     /* text-shadow: 0 0 10px #8c8c8c; */
 }
+
 .title-box h3 {
     font-weight: 500;
 }
@@ -70,7 +120,7 @@ body {
     width: 100%;
     height: 100vh;
     background: url('../images/test_pic10.jpeg');
-    filter:saturate(0);
+    filter: saturate(0);
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
@@ -185,7 +235,7 @@ section#fullParallax>div {
     transition: opacity 2s ease;
 }
 
-#span{
+#span {
     font-size: 1.6em;
     font-weight: 400;
 }
