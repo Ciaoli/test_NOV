@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://vip.udn.com/static/img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?familoy=Noto+Sans+TC:wght@300;400;500;700&amp;family=Noto+Serif+TC:wght@400;600;700&amp;display=swap">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>TEST</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        img {
+            display: block;
+        }
+
+        body {
+            font-family: 'Noto Sans TC', sans-serif, '微軟正黑體';
+            /* width: 100%;
+            height: 100%;
+            background-image: url('./images/test.JPG');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            position: relative; */
+            /* position: relative; */
+        }
+
+        @import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
+
+        body {
+            font-family: Montserrat, sans-serif;
+            line-height: 1.4;
+            background-color: #232323;
+            color: #f0f0f0;
+        }
+
+        img {
+            width: 100%;
+            display: block;
+            /* box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.3); */
+        }
+
+        @media (min-width: 700px) {
+            img {
+                width: 400px;
+            }
+        }
+
+        @media (min-width: 1000px) {
+            img {
+                width: 600px;
+            }
+        }
+
+        .section-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            height: 100vh;
+        }
+
+        .left,
+        .right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .grid-text {
+            margin: 0 auto;
+            padding: 1rem;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+            font-size: 1.2rem;
+            line-height: 2;
+            height: 100%;
+        }
+
+        .grid-image {
+            position: fixed;
+            z-index: 100;
+        }
+
+        .image-1,
+        .image-2,
+        .image-3 {
+            opacity: 0;
+        }
+
+        .image-1.active,
+        .image-2.active,
+        .image-3.active {
+            -webkit-animation: fadeIn 1000ms ease forwards;
+            animation: fadeIn 1000ms ease forwards;
+            opacity: 1;
+        }
+
+        @-webkit-keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <section id="section1">
+        <div class="section-grid">
+            <div class="left">
+                <div class="grid-text">
+                    <p data-aos="fade-in" data-aos-duration="1000" data-aos-easing="ease-in-out" >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis consequuntur officia laboriosam
+                        error. Illum numquam est labore suscipit deserunt voluptate aspernatur dolorem, ipsam recusandae
+                        cupiditate itaque omnis eum fuga iste?</p>
+                </div>
+            </div>
+            <div class="right">
+                <div class="grid-image image-1 active"><img
+                        src="images/test_pic1.jpg"/>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section2">
+        <div class="section-grid">
+            <div class="left">
+                <div class="grid-text">
+                    <p data-aos="fade-in" data-aos-duration="1000" data-aos-easing="ease-in-out">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis consequuntur officia laboriosam
+                        error. Illum numquam est labore suscipit deserunt voluptate aspernatur dolorem, ipsam recusandae
+                        cupiditate itaque omnis eum fuga iste?</p>
+                </div>
+            </div>
+            <div class="right">
+                <div class="grid-image image-2 active" z><img
+                        src="images/test_pic2.jpg"/>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section3">
+        <div class="section-grid">
+            <div class="left">
+                <div class="grid-text">
+                    <p data-aos="fade-in" data-aos-duration="1000" data-aos-easing="ease-in-out">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis consequuntur officia laboriosam
+                        error. Illum numquam est labore suscipit deserunt voluptate aspernatur dolorem, ipsam recusandae
+                        cupiditate itaque omnis eum fuga iste?</p>
+                </div>
+            </div>
+            <div class="right">
+                <div class="grid-image image-3 active"><img
+                        src="images/test_pic3.jpg"/>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://assets.codepen.io/16327/ScrollTrigger.min.js?v=32"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.min.js"
+        integrity="sha512-HYG9E+RmbXS7oy529Nk8byKFw5jqM3R1zzvoV2JnltsIGkK/AhZSzciYCNxDMOXEbYO9w6MJ6SpuYgm5PJPpeQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script>
+        // find the top of each section
+        var section1 = $('#section1').offset().top;
+        var section2 = $('#section2').offset().top;
+        var section3 = $('#section3').offset().top;
+
+        // number of pixels before the section to change image
+        var scrollOffset = 300;
+
+
+        // run this function when the window scrolls
+        $(window).scroll(function () {
+
+
+            // get the window height on scroll
+            var scroll = $(window).scrollTop() + scrollOffset;
+
+            // if scroll hits the top of section 1  
+            if (scroll < 500) {
+                $('.grid-image img').attr('src', 'images/test_pic1.jpg');
+            }
+
+            // if scroll hits the top of section 2
+            if (scroll > section2) {
+                $('.grid-image img').attr('src', 'images/test_pic2.jpg');
+            }
+
+            // if scroll hits the top of section 3
+            if (scroll > section3) {
+                $('.grid-image img').attr('src', 'images/test_pic3.jpg');
+            }
+        });
+
+    </script>
+</body>
+
+</html>

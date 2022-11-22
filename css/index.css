@@ -22,7 +22,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('../images/test_bg.webp') no-repeat;
+    background: url('../images/test.JPG') no-repeat;
     background-position: center center;
     background-size: cover;
     padding: 0;
@@ -30,12 +30,24 @@ body {
     z-index: 50;
 }
 
+.title-box {
+    position: absolute;
+    top:20%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
+
 .title-box h3,
 .title-box h2 {
     text-align: left;
     font-family: 'Noto Sans', 'Sans-serif', '微軟正黑體';
     font-weight: 600;
-    color: #fff;
+    color: #222;
+    letter-spacing: 3px;
+    /* text-shadow: 0 0 10px #8c8c8c; */
+}
+.title-box h3 {
+    font-weight: 500;
 }
 
 /* 文章照片 + 圖說 */
@@ -56,7 +68,8 @@ body {
 .full-fixed {
     width: 100%;
     height: 100vh;
-    background: url('../images/test_pic2_1.jpeg');
+    background: url('../images/test_pic10.jpeg');
+    filter:saturate(0);
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
@@ -138,7 +151,7 @@ section#fullParallax>div {
 }
 
 #fullParallax-img1 {
-    background: url('../images/test_pic2_1.jpeg');
+    background: url('../images/test_pic2.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -146,7 +159,7 @@ section#fullParallax>div {
 }
 
 #fullParallax-img2 {
-    background: url('../images/test_bg.webp');
+    background: url('../images/test_pic3.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -165,6 +178,11 @@ section#fullParallax>div {
     color: #fff;
     /* background-color: #f0f0f0; */
     transition: opacity 2s ease;
+}
+
+#span{
+    font-size: 1.6em;
+    font-weight: 400;
 }
 
 /* 滿版大圖，文字滾動視差 */
