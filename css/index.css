@@ -60,6 +60,7 @@ body {
 }
 
 #note {
+    margin-top: 10px;
     text-align: left;
 }
 
@@ -123,6 +124,10 @@ body {
     margin: 0 auto;
     justify-content: center;
     letter-spacing: 2px;
+    color: #21ABCD;
+}
+
+#key-color {
     color: #D600D6;
 }
 
