@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            background-color: #1F1B1B;
+        }
+
+        .threshold {
+            position: sticky;
+            width: 100%;
+            height: 1px;
+            /* background-color: red; */
+            z-index: 9999999999;
+        }
+
+        .threshold--top {
+            top: 50%;
+        }
+
+        p,
+        h1,
+        h3 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            line-height: 1.8;
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: 300;
+        }
+
+        h1 {
+            font-size: 4rem;
+            font-weight: bold;
+            margin-bottom: 0;
+        }
+
+        h3 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 0;
+        }
+
+        .text {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .text p {
+            width: 50%;
+        }
+
+        .image {
+            opacity: 0;
+            transition: all 0.5s ease;
+        }
+
+        .image.active {
+            opacity: 1;
+        }
+
+        .locker {
+            /* outline: 1px solid #cdcdcd; */
+            outline-offset: -1px;
+            position: relative;
+            display: grid;
+            grid-template-columns: [full-start] minmax(4.2rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 8rem) [col-end]) [center-end] minmax(4.2rem, 1fr) [full-end];
+        }
+
+        .locker__image {
+            position: relative;
+            grid-column: col-start 2/col-end 6;
+        }
+
+        .locker__image img {
+           height: 80vh;
+           width: auto;
+            /* height: 70vh; */
+            display: block;
+            position: absolute;
+            transition: all 1s ease;
+        }
+
+        .locker__container {
+            position: sticky;
+            position: -webkit-sticky;
+            top: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .locker__content {
+            grid-column: col-start 10/center-end;
+        }
+
+        .locker__section {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            /* border-top: 1px solid #cdcdcd; */
+        }
+
+        .locker__section:first-child {
+            border: none;
+        }
+
+        .locker__section p {
+            width: 80%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="text">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.</p>
+    </div>
+    <div class="locker">
+        <div class="locker__image">
+            <div class="locker__container">
+                <img class="image image--1" src="images/test.jfif">
+                <img class="image image--2" src="images/test_pic1.jpg">
+                <img class="image image--3" src="images/test_pic2.jpg">
+                <img class="image image--4" src="images/test_pic3.jpg">
+            </div>
+        </div>
+        <div class="locker__content">
+            <div class="locker__section locker__section--1 cb" data-swap="image--1">
+                <h3>01</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="locker__section locker__section--2 cb" data-swap="image--2">
+                <h3>02</h3>
+                <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="locker__section locker__section--3 cb" data-swap="image--3">
+                <h3>03</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="locker__section locker__section--4 cb" data-swap="image--4">
+                <h3>04</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+        <div class="threshold threshold--top"></div>
+    </div>
+    <div class="text">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.</p>
+    </div>
+
+    <script>
+        if (typeof window.IntersectionObserver !== 'undefined') {
+            let options = {
+                threshold: [0.5, 1]
+            }
+            const targets = document.querySelectorAll('.cb');
+            const locker = document.querySelector('.locker__container');
+            function handleIntersection(entries) {
+                entries.map((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.current = entry.target.dataset.swap;
+                        document.querySelector(".locker__container ." + entry.target.current).classList.add("active");
+                    } else {
+                        document.querySelector(".locker__container ." + entry.target.current).classList.remove("active");
+                    }
+                });
+            }
+            const observer = new IntersectionObserver(handleIntersection, options);
+            targets.forEach(target => observer.observe(target));
+        } else {
+            // Fallback
+        }
+    </script>
+</body>
+
+</html>
