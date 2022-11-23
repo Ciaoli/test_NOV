@@ -239,18 +239,22 @@ section#fullParallax>div {
     transform: translate(-50%, -50%);
     margin: 0 auto;
     font-size: 1.5rem;
-    text-shadow: 0 0 10px #222;
-    letter-spacing: 3px;
-    color: #fff;
-    /* background-color: #f0f0f0; */
+    /* text-shadow: 0 0 10px #222; */
+    letter-spacing: 5px;
+    /* color: #fff; */
+    color: #1F1B1B;
     transition: opacity 2s ease;
 }
 
 #span {
+    display: block;
     font-size: 1.6em;
     font-weight: 400;
+    background-color: #fff;
+    padding: 5px 10px;
+    text-align: center;
+    /* background-color: #1F1B1B; */
 }
-
 /* 滿版大圖，文字滾動視差 */
 .parallax-sec01[data-v-528c1960] {
     height: 280vh;
