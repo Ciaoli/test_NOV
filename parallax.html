@@ -454,7 +454,7 @@
         const img1Elem = document.querySelector('#fullParallax-img1');
         const img2Elem = document.querySelector('#fullParallax-img2');
 
-        const scrollAmount = -900;
+        const scrollAmount = -800;
         window.addEventListener('scroll', (event) => {
             const { top } = fullbgElem.getBoundingClientRect();
             const changeImg = top - window.innerHeight < scrollAmount;
