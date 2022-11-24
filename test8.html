@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        section {
+            /* background: url('./images/test_pic1.jpg') no-repeat center center fixed; */
+            /* background: #f0f0f0; */
+            /* background-size: cover; */
+        }
+        img {
+            display: block;
+        }
+
+        div {
+            /* height: 300vh; */
+            position: relative;
+        }
+
+        #one {
+            background: url('./images/test_pic1.jpg') no-repeat center center fixed;
+            height: 100vh;
+            background-size: cover;
+            /* opacity: 0; */
+            transition: all 0.5s ease-in-out;
+        }
+
+        #two {
+            background: url('./images/test_pic3.jpg') no-repeat center center fixed;
+            background-size: cover;
+            height: 100vh;
+
+            /* opacity: 0; */
+            transition: all 0.5s ease-in-out;
+            /* transition: all 1s ease-in-out; */
+        }
+
+
+        #three {
+            background: url('./images/test_pic2.jpg') no-repeat center center fixed;
+            background-size: cover;
+            height: 100vh;
+
+            /* opacity: 0; */
+            transition: all 0.5s ease-in-out;
+            /* transition: all 1s ease-in-out; */
+        }    
+
+        div h2 {
+            /* position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); */
+            text-align: center;
+            /* margin-top: 40%; */
+            margin-bottom: 0;
+            color: #222;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+            letter-spacing: 5px;
+            font-size: 48px;
+            line-height: 96px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <div id="one" class="div1" data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="500">
+            <div>
+                <h2>one</h2>
+            </div>
+        </div>
+        <div id="two" class="div2"  data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="500">
+            <div>
+                <h2>two</h2>
+            </div>
+        </div>
+        <div id="three" class="div3"  data-aos="fade" data-aos-easing="ease-in-out" data-aos-duration="500">
+            <div>
+                <h2>three</h2>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $(window).on("scroll", function () {
+
+            if ($(document).scrollTop() >= $("#one").position().top) {
+                $('section').css('background', $("#one"));
+                // $('#one').css('opacity', 1);
+            }
+
+            if ($(document).scrollTop() > $("#two").position().top) {
+                $('section').css('background', $("#two"));
+                // $('#two').css('opacity', 1);
+            };
+
+            if ($(document).scrollTop() > $("#three").position().top) {
+                $('section').css('background', $("#three"));
+                // $('#three').css('opacity', 1);
+            };
+
+        });
+    </script>
+        <!-- AOS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+
+</body>
+
+</html>

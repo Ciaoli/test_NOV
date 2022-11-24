@@ -255,6 +255,66 @@ section#fullParallax>div {
     text-align: center;
     /* background-color: #1F1B1B; */
 }
+
+/* parallax ver3 */
+.parallax-container {
+    position: relative;
+    /* width: 100%; */
+    background: url('../images/test_bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-attachment: fixed;
+}
+
+.parallax-container section {
+    position: relative;
+    /* width: 100%; */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.parallax-container section h1 {
+    /* text-transform: uppercase;
+    color: #fff;
+    background: rgba(0, 0, 0, .3);
+    border: 5px solid #fff;
+    display: inline-block;
+    padding: 20px 40px;
+    font-size: 50px; */
+    color: #fff;
+    text-align: center;
+    text-shadow: 0px 0px 5px #8c8c8c;
+}
+
+.parallax-container.slide1 {
+    background: url('../images/test_pic2.jpg');
+    /* background-size: 100% 100vh; */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+.parallax-container.slide2 {
+    background: url('../images/test_bg.jpg');
+    /* background-size: 100% 100vh; */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.parallax-container.slide3 {
+    background: url('../images/test_pic6.jpg');
+    /* background-size: 100% 100vh; */
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 /* 滿版大圖，文字滾動視差 */
 .parallax-sec01[data-v-528c1960] {
     height: 280vh;
