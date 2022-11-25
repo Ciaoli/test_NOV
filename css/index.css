@@ -86,6 +86,7 @@ a {
 .full-screen-video{
     height: 100vh;
     position: relative;
+    z-index: 50;
 }
 .full-screen-video video {
     position: absolute;
