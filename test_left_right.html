@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="網頁視覺動態模擬 DEMO | 畫面左右分割，滾動視差敘事">
+    <meta property="og:image" content="images/test_pic6.jpg">
+    <link rel="icon" type="image/x-icon" href="https://vip.udn.com/static/img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?familoy=Noto+Sans+TC:wght@300;400;500;700&amp;family=Noto+Serif+TC:wght@400;600;700&amp;display=swap">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="css/font.css"> -->
+    <!-- <link rel="stylesheet" href="css/index.css"> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.min.js"
+        integrity="sha512-HYG9E+RmbXS7oy529Nk8byKFw5jqM3R1zzvoV2JnltsIGkK/AhZSzciYCNxDMOXEbYO9w6MJ6SpuYgm5PJPpeQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/scroll-out@2.2.2/dist/scroll-out.min.js"></script>
+    <title>DEMO_1130</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 0;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        img {
+            display: block;
+        }
+
+        .scrollHalf {
+            position: relative
+        }
+
+        /*.scrollHalf__grupo { opacity: calc(1/(1+(var(--visible-y)*var(--visible-y)*var(--visible-y)*var(--visible-y)))); transition: all 200ms ease-in-out;}*/
+
+
+        .scrollHalf__grupo {
+            transition: all 200ms ease-in-out;
+        }
+
+        .scrollHalf__grupo__imagen {
+            overflow: hidden;
+        }
+        .scrollHalf__grupo__imagen img {
+            width: 100%;
+        }
+        .scrollHalf__grupo__contenido {
+            padding: 5rem;
+        }
+
+
+        .scrollHalf__grupo[data-scroll="out"] {
+            opacity: 0;
+        }
+
+        .scrollHalf__grupo[data-scroll="in"] {
+            opacity: calc(var(--visible-y)*1.9);
+        }
+
+
+        @media screen and (min-width:900px) {
+            .scrollHalf__grupo {
+                min-height: 100vh;
+            }
+
+            .scrollHalf__grupo__imagen {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 50vw;
+                height: 100vh;
+            }
+
+            .scrollHalf__grupo__imagen img {
+                min-height: 100vh;
+                min-width: 50vw;
+            }
+
+            .scrollHalf__grupo__contenido {
+                margin: 2vw 3vw 0 52vw;
+            }
+        }
+
+        .scrollHalf__grupo__contenido h3 {
+            font-size: 32px;
+            line-height: 48px;
+        }
+
+        .scrollHalf__grupo__contenido p {
+            font-family: 'Noto Sans TC', sans-serif, '微軟正黑體';
+            /* font-family: 'Noto Serif TC', serif, '微軟正黑體'; */
+            font-size: 21px;
+            /* letter-spacing: 2px; */
+            line-height: 42px;
+            font-weight: 400;
+            margin: 0 auto;
+            color: #404040;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- wrapper start -->
+
+        <!-- 畫面左右分割，滾動視差敘事 -->
+        <div class="scrollHalf">
+
+            <div class="scrollHalf__grupo" data-scroll>
+                <div class="scrollHalf__grupo__imagen">
+                    <img src="images/test_pic8.jpg" />
+                </div>
+                <div class="scrollHalf__grupo__contenido">
+                    <h3>標題1<br>畫面左右分割，滾動視差敘事</h3>
+                    <p> 文字文字文字文字文字，文字文字文字？文字文字，文字文字文字文字文字，文字文字。文字文字文字文字，文字文字，文字文字文字文字文字文字⋯文字，文字文字文字文字，文字文字文字文字文字文字。
+                        <br><br>
+                        文字文字文字：文字文字文字文字⋯文字文字文字文字文字，文字文字文字文字文字文字，文字文字文字文字文字文字，文字文字文字文字。
+                    </p>
+                </div>
+            </div>
+
+            <div class="scrollHalf__grupo kk" data-scroll>
+                <div class="scrollHalf__grupo__imagen">
+                    <img src="images/test_pic4.jpg" />
+                    <!-- 
+                  De ALMA, CC BY 4.0, https://commons.wikimedia.org/w/index.php?curid=60432670 
+                -->
+                </div>
+                <div class="scrollHalf__grupo__contenido">
+                    <h3>標題2</h3>
+                    <p> 文字文字文字文字文字文字，文字文字，文字文字文字文字，文字，文字文字文字文字文字文字文字文字，文字文字文字。
+                        <br> <br>
+                        文字文字，文字文字文字文字⋯文字文字文字文字文字⋯文字文字文字文字，文字文字文字文字文字文字⋯文字文字。文字文字文字文字文字文字。
+                    </p>
+                </div>
+            </div>
+
+            <div class="scrollHalf__grupo" data-scroll>
+                <div class="scrollHalf__grupo__imagen">
+                    <img src="images/test_pic3.jpg" />
+                </div>
+                <div class="scrollHalf__grupo__contenido">
+                    <h3>標題3</h3>
+                    <p>
+                        文字文字⋯文字文字文字文字，文字文字，文字文字文字文字文字文字文字？文字文字文字文字文字，文字文字文字。文字文字文字文字。
+                        <br><br>
+                        文字文字文字文字文字文字文字，文字文字文字文字文字，文字，文字文字文字文字文字文字。
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="scrollHalf__grupo" data-scroll>
+                <div class="scrollHalf__grupo__imagen">
+                    <img src="images/test_pic1.jpg" />
+                </div>
+                <div class="scrollHalf__grupo__contenido">
+                    <h3>標題4</h3>
+                    <p>
+                        文字文字⋯文字文字文字文字，文字文字，文字文字文字文字文字文字文字？文字文字文字文字文字，文字文字文字。文字文字文字文字。
+                        <br><br>
+                        文字文字文字文字文字文字文字，文字文字文字文字文字，文字，文字文字文字文字文字文字。
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="scrollHalf__grupo" data-scroll>
+                <div class="scrollHalf__grupo__imagen">
+                    <img src="images/test_pic2.jpg" />
+                </div>
+                <div class="scrollHalf__grupo__contenido">
+                    <h3>標題5</h3>
+                    <p>
+                        文字文字⋯文字文字文字文字，文字文字，文字文字文字文字文字文字文字？文字文字文字文字文字，文字文字文字。文字文字文字文字。
+                        <br><br>
+                        文字文字文字文字文字文字文字，文字文字文字文字文字，文字，文字文字文字文字文字文字。
+                    </p>
+                </div>
+
+            </div>
+
+
+        </div> <!-- content end -->
+
+    </div>
+
+    <!-- JS -->
+    <script src="js/parallax.js"></script>
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!--  -->
+    <script>
+        $(document).ready(function ($) {
+
+            console.clear();
+
+            ScrollOut({
+                cssProps: {
+                    visibleY: true,
+                    viewportY: true,
+                    scrollPercentY: true
+                },
+                threshold: 0.2
+            });
+
+        });  
+    </script>
+    <!-- goTop 按鈕 -->
+    <script>
+        var btn = $('#gotopBtn');
+
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 300) {
+                btn.addClass('show');
+            } else {
+                btn.removeClass('show');
+            }
+        });
+
+        btn.on('click', function (e) {
+            e.preventDefault();
+            $('html, body').animate({ scrollTop: 0 }, '3000');
+        });
+
+    </script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+
+</html>
