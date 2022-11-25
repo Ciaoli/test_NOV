@@ -81,6 +81,17 @@ a {
     z-index: 50;
 }
 
+/* 首屏滿版影片 */
+.full-screen-video{
+    height: 100vh;
+    position: relative;
+}
+.full-screen-video video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 .title-box {
     position: absolute;
     top: 20%;
@@ -94,6 +105,7 @@ a {
     font-family: 'Noto Sans', 'Sans-serif', '微軟正黑體';
     font-weight: 600;
     color: #1F1B1B;
+    /* color: #fff; */
     letter-spacing: 3px;
     /* text-shadow: 0 0 10px #8c8c8c; */
 }
@@ -102,10 +114,12 @@ a {
     font-weight: 500;
     margin-bottom: 5px;
     color: #18130E;
+    /* color: #fff; */
 }
 
 .title-box span {
     color: #4A4647;
+    /* color: #fff; */
     font-weight: 500;
     letter-spacing: 5px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -203,7 +217,7 @@ a {
 }
 
 /* 滿版大圖滾動視差 | 背景圖變換 */
-section#fullParallax {
+/* section#fullParallax {
     height: 100vh;
 }
 
@@ -239,12 +253,12 @@ section#fullParallax>div {
     transform: translate(-50%, -50%);
     margin: 0 auto;
     font-size: 1.5rem;
-    /* text-shadow: 0 0 10px #222; */
+    text-shadow: 0 0 10px #222;
     letter-spacing: 5px;
-    /* color: #fff; */
+    color: #fff;
     color: #1F1B1B;
     transition: opacity 2s ease;
-}
+} */
 
 #span {
     display: block;
@@ -257,63 +271,19 @@ section#fullParallax>div {
 }
 
 /* parallax ver3 */
-.parallax-container {
-    position: relative;
-    /* width: 100%; */
-    background: url('../images/test_bg.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-attachment: fixed;
+.spread-out {
+  margin-top: 50vh;
+  margin-bottom: 50vh;
 }
-
-.parallax-container section {
-    position: relative;
-    /* width: 100%; */
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-.parallax-container section h1 {
-    /* text-transform: uppercase;
+.spread-out p {
     color: #fff;
-    background: rgba(0, 0, 0, .3);
-    border: 5px solid #fff;
-    display: inline-block;
-    padding: 20px 40px;
-    font-size: 50px; */
-    color: #fff;
-    text-align: center;
-    text-shadow: 0px 0px 5px #8c8c8c;
+    letter-spacing: 2px;
+    margin-right: 0;
+    margin-left: 0;
+    margin: 0 auto;
+    text-shadow: 0 0 5px #222;
 }
 
-.parallax-container.slide1 {
-    background: url('../images/test_pic2.jpg');
-    /* background-size: 100% 100vh; */
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-
-
-.parallax-container.slide2 {
-    background: url('../images/test_bg.jpg');
-    /* background-size: 100% 100vh; */
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-
-.parallax-container.slide3 {
-    background: url('../images/test_pic6.jpg');
-    /* background-size: 100% 100vh; */
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-}
 
 /* 滿版大圖，文字滾動視差 */
 .parallax-sec01[data-v-528c1960] {

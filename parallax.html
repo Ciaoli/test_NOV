@@ -14,6 +14,13 @@
         href="https://fonts.googleapis.com/css2?familoy=Noto+Sans+TC:wght@300;400;500;700&amp;family=Noto+Serif+TC:wght@400;600;700&amp;display=swap">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.6.0/flatly/bootstrap.min.css">
+    <link rel="preload" href="https://source.unsplash.com/A5W-mPXnqE4/1920x1280" as="image">
+    <link rel="preload" href="https://source.unsplash.com/R61vEUMzkug/1920x1280" as="image">
+    <link rel="preload" href="https://source.unsplash.com/ZSvlTa6yARw/1920x1280" as="image">
+    <link rel="preload" href="https://source.unsplash.com/SYx3UCHZJlo/1920x1280" as="image">
+    <link rel="preload" href="https://source.unsplash.com/wHaBKOHT5TY/1920x1280" as="image">
+    <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/index.css">
     <!-- <link rel="stylesheet" href="css/header.css"> -->
     <title>DEMO_1130</title>
@@ -113,14 +120,22 @@
         <div id="content">
             <!-- content start -->
             <!-- 首屏滿版大圖 -->
-            <section id="banner" class="top-full-bac">
+            <!-- <section id="banner" class="top-full-bac">
                 <div class="title-box">
                     <h3>滿版大圖</h3>
                     <h2>文字滾動視差<span> DEMO</span></h2>
                 </div>
                 <div class="banner-arrow">
-                    <!-- <span>下滑看更多</span> -->
-                    <!-- <img src="./img/arrow.svg" alt=""> -->
+                    <span>下滑看更多</span>
+                    <img src="./img/arrow.svg" alt="">
+                </div>
+            </section> -->
+            <section class="full-screen-video">
+                <video src="./images/video1.mp4"  type="video/mp4" poster="./images/test.jfif" autoplay loop>
+                </video>
+                <div class="title-box">
+                    <h3>滿版大圖</h3>
+                    <h2>文字滾動視差<span> DEMO</span></h2>
                 </div>
             </section>
 
@@ -296,23 +311,31 @@
             </section>
 
             <!--滿版大圖滾動視差 | 背景圖變換 -->
-            <section id="fullParallax">
-                <div id="fullParallax-img1">
+            <!-- parallax ver3 -->
+            <div class="scroll-graphic container-fluid position-relative">
 
-                </div>
-                <div id="fullParallax-img2">
-                    <div id="fullParallax-img-con">
-                        <span id="span" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-out">背景圖變換
-                            <font
-                                style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: #21ABCD;">
-                                DEMO</font></span>
-                        <!-- <span id="span">DEMO</span> -->
+                <div class="row d-flex flex-column justify-content-center align-items-center">
+                    <div class="graphic-text-box col-10 col-sm-6 col-md-4 spread-out">
+                        <p data-image="./images/test_pic1.jpg" id="parallax-ver3">段落1 Lorem ipsum dolor sit, amet
+                            consectetur adipisicing elit. Nobis omnis necessitatibus debitis aut voluptatum! Aliquid?
+                        </p>
                     </div>
                 </div>
-                <div id="fullParallax-img3">
-
+                <div class="row d-flex flex-column justify-content-center align-items-center">
+                    <div class="graphic-text-box col-10 col-sm-6 col-md-4 spread-out">
+                        <p data-image="./images/test_pic3.jpg" id="parallax-ver3">段落2 Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Dignissimos assumenda accusamus, dolor quas consequatur
+                            provident soluta tenetur cupiditate eaque delectus!</p>
+                    </div>
                 </div>
-            </section>
+                <div class="row d-flex flex-column justify-content-center align-items-center">
+                    <div class="graphic-text-box col-10 col-sm-6 col-md-4 spread-out">
+                        <p data-image="./images/test_pic2.jpg" id="parallax-ver3">段落3 Lorem ipsum dolor sit amet
+                            consectetur adipisicing elit. Quidem, ullam.</p>
+                    </div>
+                </div>
+
+            </div>
 
             <!-- 文章 -->
             <section id="" class="article-only">
@@ -361,22 +384,6 @@
                         </p>
                     </div>
                 </div>
-            </section>
-
-            <!--  -->
-            <section class="parallax-container">
-                <section>
-                    <h1 data-aos="fade-in" data-aos-duration="1000"data-aos-easing="ease-in-out">Section 1</h1>
-                </section>
-                <section data-aos="fade-in" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-offset="50">
-                    <h1>Section 2</h1>
-                </section>
-                <section data-aos="fade-in" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-offset="100">
-                    <h1>Section 3</h1>
-                </section>
-                <!-- <section>
-                    <h1>Section 4</h1>
-                </section> -->
             </section>
 
             <footer>
@@ -485,30 +492,44 @@
         });
     </script>
 
-        <!--parallax-ver3 scroll -->
-        <script>
-        var scroll = 0;
-        var conponent = document.querySelector('.parallax-container');
-        var windowHeight = window.innerHeight;
-        document.addEventListener('scroll', () => {
-            scroll = window.pageYOffset;
-            if (scroll >= 0 && scroll < windowHeight) {
-                //to remove all classes sauf .container
-                conponent.setAttribute('class', 'parallax-container');
-                conponent.classList.add('slide1');
-            }
-            else if (scroll >= windowHeight && scroll < 2 * windowHeight) {
-                //to remove all classes sauf .container
-                conponent.setAttribute('class', 'parallax-container');
-                conponent.classList.add('slide2');
-            }
-            else if (scroll >= 2 * windowHeight && scroll < 3 * windowHeight) {
-                //to remove all classes sauf .container
-                conponent.setAttribute('class', 'parallax-container');
-                conponent.classList.add('slide3');
-            }
-        })
-        </script>
+    <!--parallax-ver3 scroll -->
+    <script src="js/jquery-scroll-swap.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $('.scroll-graphic').scrollSwap();
+
+        });
+    </script>
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-36251023-1']);
+        _gaq.push(['_setDomainName', 'jqueryscript.net']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+
+    <script>
+        try {
+            fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", { method: 'HEAD', mode: 'no-cors' })).then(function (response) {
+                return true;
+            }).catch(function (e) {
+                var carbonScript = document.createElement("script");
+                carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CK7DKKQU&placement=wwwjqueryscriptnet";
+                carbonScript.id = "_carbonads_js";
+                document.getElementById("carbon-block").appendChild(carbonScript);
+            });
+        } catch (error) {
+            console.log(error);
+        }
+    </script>
 
     <!-- goTop 按鈕 -->
     <script>
