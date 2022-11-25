@@ -1,6 +1,7 @@
 p {
     width: 620px;
     font-family: 'Noto Sans TC', sans-serif, '微軟正黑體';
+    /* font-family: 'Noto Serif TC', serif, '微軟正黑體'; */
     font-size: 21px;
     /* letter-spacing: 2px; */
     line-height: 42px;
@@ -16,10 +17,11 @@ h4,
 h5,
 h6 {
     text-align: left;
-    /* font-family: 'Noto Serif TC', serif, '微軟正黑體'; */
-    font-family: 'Noto Sans TC', sans-serif, '微軟正黑體';
+    font-family: 'Noto Serif TC', serif, '微軟正黑體';
+    /* font-family: 'Noto Sans TC', sans-serif, '微軟正黑體'; */
     width: 620px;
-    font-weight: 600;
+    /* font-weight: 600; */
+    font-weight: 700;
     margin: 0 auto;
     letter-spacing: 3px;
     color: #404040;
@@ -118,6 +120,11 @@ h6 {
         width: 530px;
     }
 
+    #parallax-ver3 {
+        width: 530px;
+        margin: 0 auto;
+    }
+
     figure,
     #pic_note {
         width: 530px;
@@ -159,6 +166,10 @@ h6 {
         width: 362px;
     }
 
+    #parallax-ver3 {
+        width: 362px;
+    }
+
     figure,
     #pic_note {
         width: 362px;
@@ -197,6 +208,10 @@ h6 {
 
     p,
     #note {
+        width: 362px;
+    }
+
+    #parallax-ver3 {
         width: 362px;
     }
 
@@ -243,6 +258,10 @@ h6 {
         width: 280px;
     }
 
+    #parallax-ver3 {
+        width: 280px;
+    }
+
     h1,
     h2,
     h3,
@@ -284,6 +303,10 @@ h6 {
         width: 280px;
     }
 
+    #parallax-ver3 {
+        width: 280px;
+    }
+
     h1,
     h2,
     h3,
@@ -320,6 +343,10 @@ h6 {
 
     p,
     #note {
+        width: 280px;
+    }
+
+    #parallax-ver3 {
         width: 280px;
     }
 
@@ -370,6 +397,10 @@ h6 {
         margin: 0 auto;
     }
 
+    #parallax-ver3 {
+        width: 280px;
+    }
+
     h1,
     h2,
     h3,
@@ -405,10 +436,18 @@ h6 {
         width: 280px;
     }
 
+    #parallax-ver3 {
+        width: 280px;
+    }
+
     figure,
     #pic_note {
         width: 280px;
         margin: 0 auto;
+    }
+
+    #parallax-ver3 {
+        width: 280px;
     }
 
     h1,
@@ -443,6 +482,10 @@ h6 {
 
     p,
     #note {
+        width: 270px;
+    }
+
+    #parallax-ver3 {
         width: 270px;
     }
 
@@ -485,6 +528,9 @@ h6 {
 
     p,
     #note {
+        width: 260px;
+    }
+    #parallax-ver3 {
         width: 260px;
     }
 
