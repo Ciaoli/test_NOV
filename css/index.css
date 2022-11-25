@@ -319,10 +319,13 @@ section#fullParallax>div {
 .spread-out p {
     color: #fff;
     letter-spacing: 2px;
+    line-height: 48px;
     margin: 0 auto;
     margin-right: 0;
     margin-left: 0;
     text-shadow: 0 0 5px #222;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -411,7 +414,15 @@ section#fullParallax>div {
     .parallax-sec01__text-box {
         max-width: calc(100vw - 298px);
     }
-
+    .spread-out p {
+        width: 362px;
+        color: #fff;
+        letter-spacing: 2px;
+        margin: 0 auto;
+        margin-right: 0;
+        margin-left: 0;
+        text-shadow: 0 0 5px #222;
+    }
 }
 
 @media screen and (min-width: 375.02px) and (max-width:767.98px) {
@@ -449,6 +460,15 @@ section#fullParallax>div {
     #chart {
         width: 362px;
     }
+    .spread-out p {
+        width: 362px;
+        color: #fff;
+        letter-spacing: 2px;
+        margin: 0 auto;
+        margin-right: 0;
+        margin-left: 0;
+        text-shadow: 0 0 5px #222;
+    }
 }
 
 @media all and (min-width:450px) and (max-width:499px) {
@@ -457,6 +477,15 @@ section#fullParallax>div {
     #key-num,
     #chart {
         width: 362px;
+    }
+    .spread-out p {
+        width: 362px;
+        color: #fff;
+        letter-spacing: 2px;
+        margin: 0 auto;
+        margin-right: 0;
+        margin-left: 0;
+        text-shadow: 0 0 5px #222;
     }
 }
 
@@ -467,6 +496,15 @@ section#fullParallax>div {
     #key-num,
     #chart {
         width: 280px;
+    }
+        .spread-out p {
+        width: 362px;
+        color: #fff;
+        letter-spacing: 2px;
+        margin: 0 auto;
+        margin-right: 0;
+        margin-left: 0;
+        text-shadow: 0 0 5px #222;
     }
 }
 

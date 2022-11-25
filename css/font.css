@@ -120,11 +120,6 @@ h6 {
         width: 530px;
     }
 
-    #parallax-ver3 {
-        width: 530px;
-        margin: 0 auto;
-    }
-
     figure,
     #pic_note {
         width: 530px;
@@ -141,6 +136,16 @@ h6 {
     span {
         text-align: left;
         margin: 0 auto;
+    }
+
+    .spread-out p {
+        width: 362px;
+        color: #fff;
+        letter-spacing: 2px;
+        margin: 0 auto;
+        margin-right: 0;
+        margin-left: 0;
+        text-shadow: 0 0 5px #222;
     }
 
 }
@@ -188,6 +193,15 @@ h6 {
         text-align: left;
     }
 
+    .spread-out p {
+        width: 362px;
+        color: #fff;
+        letter-spacing: 2px;
+        margin: 0 auto;
+        margin-right: 0;
+        margin-left: 0;
+        text-shadow: 0 0 5px #222;
+    }
 }
 
 @media all and (min-width:450px) and (max-width:499px) {
@@ -231,6 +245,16 @@ h6 {
     #pic_note {
         width: 362px;
         margin: 0 auto;
+    }
+    
+    .spread-out p {
+        width: 362px;
+        color: #fff;
+        letter-spacing: 2px;
+        margin: 0 auto;
+        margin-right: 0;
+        margin-left: 0;
+        text-shadow: 0 0 5px #222;
     }
 
 }
@@ -278,6 +302,16 @@ h6 {
     #pic_note {
         width: 280px;
     }
+    
+    .spread-out p {
+        width: 280px;
+        color: #fff;
+        letter-spacing: 2px;
+        margin: 0 auto;
+        margin-right: 0;
+        margin-left: 0;
+        text-shadow: 0 0 5px #222;
+    }
 
 }
 
@@ -323,6 +357,16 @@ h6 {
     #pic_note {
         width: 280px;
     }
+
+    .spread-out p {
+        width: 280px;
+        color: #fff;
+        letter-spacing: 2px;
+        margin: 0 auto;
+        margin-right: 0;
+        margin-left: 0;
+        text-shadow: 0 0 5px #222;
+    }
 }
 
 /* iphone 12 & iphone 12Pro  390px */
@@ -366,6 +410,16 @@ h6 {
     #pic_note {
         width: 280px;
         margin: 0 auto;
+    }
+
+    .spread-out p {
+        width: 280px;
+        color: #fff;
+        letter-spacing: 2px;
+        margin: 0 auto;
+        margin-right: 0;
+        margin-left: 0;
+        text-shadow: 0 0 5px #222;
     }
 
 }
@@ -413,6 +467,15 @@ h6 {
         text-align: left;
     }
 
+    .spread-out p {
+        width: 280px;
+        color: #fff;
+        letter-spacing: 2px;
+        margin: 0 auto;
+        margin-right: 0;
+        margin-left: 0;
+        text-shadow: 0 0 5px #222;
+    }
 }
 
 /* iphone 12 mini  360px*/
@@ -462,6 +525,16 @@ h6 {
         text-align-last: left;
     }
 
+    .spread-out p {
+        width: 280px;
+        color: #fff;
+        letter-spacing: 2px;
+        margin: 0 auto;
+        margin-right: 0;
+        margin-left: 0;
+        text-shadow: 0 0 5px #222;
+    }
+
 }
 
 @media all and (min-width:321px) and (max-width:359px) {
@@ -505,6 +578,16 @@ h6 {
     #pic_note {
         width: 270px;
         margin: 0 auto;
+    }
+
+    .spread-out p {
+        width: 270px;
+        color: #fff;
+        letter-spacing: 2px;
+        margin: 0 auto;
+        margin-right: 0;
+        margin-left: 0;
+        text-shadow: 0 0 5px #222;
     }
 
 }
@@ -551,5 +634,13 @@ h6 {
         width: 260px;
         margin: 0 auto;
     }
-
+    .spread-out p {
+        width: 260px;
+        color: #fff;
+        letter-spacing: 2px;
+        margin: 0 auto;
+        margin-right: 0;
+        margin-left: 0;
+        text-shadow: 0 0 5px #222;
+    }
 }
