@@ -126,10 +126,10 @@ a {
     font-weight: 500;
     letter-spacing: 5px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    /* animation: title 3s linear; */
+    /* animation: title 2s linear; */
 }
 
-/* @keyframes title {
+@keyframes title {
     0% {
         color: #1F1B1B;
 
@@ -141,7 +141,7 @@ a {
     100%{
         color: #1F1B1B;
     }
-} */
+}
 
 .g-hero-scroll {
     position: absolute;
@@ -162,7 +162,7 @@ a {
 }
 .g-hero-scroll__line {
     width: 1px;
-    height: 80px;
+    height: 100px;
     background-color: #f1f1f1;
 }
 
