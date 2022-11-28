@@ -3,11 +3,13 @@
     margin: 0;
     padding: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 body {
     background-color: #DBD7D2;
     font-family: 'Noto Sans TC', sans-serif, '微軟正黑體';
-
 }
 
 /* slide */
@@ -30,7 +32,8 @@ body {
     padding: 20px;
     background-color: #f0f0f0;
     border: 1px solid #f1f1f1;
-    box-shadow: 0 0 5px #dcdcdc;
+    border-radius: 5px;
+    box-shadow: 0 0 20px #dcdcdc;
 }
 
 .slide-text-box {

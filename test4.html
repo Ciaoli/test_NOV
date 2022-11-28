@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="./images/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.6.0/flatly/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?familoy=Noto+Sans+TC:wght@300;400;500;700&amp;family=Noto+Serif+TC:wght@400;600;700&amp;display=swap">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/test.css">
+    <title>Demo</title>
+    <style>
+        body {
+            background-color: #fafafa;
+        }
+        /* section {
+            background-color: #fafafa;
+        }
+        .sec, .sec2, .sec3{
+            display: flex;
+            height: 100vh;
+        }
+        #sec-l1{
+            width: 50%;
+            height: 100vh;
+            background-image: url('./images/test_pic1.jpg');
+            background-position: center center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        #sec-l2{
+            width: 50%;
+            height: 100vh;
+            background-image: url('./images/test_pic2.jpg');
+            background-position: center center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        #sec-l3{
+            width: 50%;
+            height: 100vh;
+            background-image: url('./images/test_pic3.jpg');
+            background-position: center center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .sec-right{
+            width: 50%;
+            height: 100vh;
+        }
+        .sec-right div {
+            width: 80%;
+            margin: 50px auto;
+        }
+        .sec-right h3 {
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 48px;
+        }
+        .sec-right p {
+            margin: 0 auto;
+            font-size: 21px;
+            line-height: 42px;
+        }
+
+        .scroll-graphic {
+            width: 50%;
+        } */
+
+        .sec {
+            height: 300vh;
+            display: flex;
+        }
+        .sec-left{
+            width: 50%;
+            height: 100vh;
+        }
+
+    </style>
+</head>
+
+<body>
+    <section class="sec">
+        <div class="sec-left">
+            <div class="scroll-graphic container-fluid position-relative">
+
+                <!-- slide1 -->
+                <div class="row d-flex flex-column justify-content-center align-items-center">
+                    <div class="col-10 col-sm-6 col-md-4 spread-out">
+                        <h2 data-image="./images/test_pic1.jpg"></h2>
+                    </div>
+                </div>
+        
+                <!-- slide2 -->
+                <div class="row d-flex flex-column justify-content-center align-items-center">
+                    <div class="col-10 col-sm-6 col-md-4 spread-out">
+                        <h2 data-image="./images/test_pic2.jpg" style="width: 100%; height: 100%; background-position: center;"></h2>
+                    </div>
+                </div>
+        
+                <!-- slide3 -->
+                <div class="row d-flex flex-column justify-content-center align-items-center">
+                    <div class="col-10 col-sm-6 col-md-4 spread-out">
+                        <h2 data-image="./images/test_pic3.jpg"></h2>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+
+        <div class="sec-right">
+            <div>
+                <h2>標題</h2>
+                <p>內文</p>
+            </div>
+        </div>
+        
+    </section>
+
+
+    <!-- <section class="sec">
+        <div class="sec-left" id="sec-l1">
+
+        </div>
+        <div class="sec-right">
+            <div>
+                <h3>標題1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error illum eaque quas quis est, minima voluptatum?</p>
+            </div>
+        </div>
+    </section>
+    <section class="sec2">
+        <div class="sec-left" id="sec-l2">
+
+        </div>
+        <div class="sec-right">
+            <div>
+                <h3>標題2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus officia quia odio architecto cum rem sequi id?</p>
+            </div>
+        </div>
+    </section>
+    <section class="sec3">
+        <div class="sec-left" id="sec-l3">
+
+        </div>
+        <div class="sec-right">
+            <div>
+                <h3>標題3</h3>
+                <p>Animi beatae dolore, quisquam voluptate excepturi nemo odio cum vel inventore sapiente. quod vel corporis accusantium perspiciatis! Ullam?</p>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- <section>
+        <div class="article" style="margin: 0 auto; text-align: center;">
+            <h1>Coooooool!</h1>
+        </div>
+    </section>
+     -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-scroll-swap.js"></script>
+
+    <!-- scroll-swap -->
+    <script>
+        $(document).ready(function () {
+
+            $('.scroll-graphic').scrollSwap();
+
+        });
+    </script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
