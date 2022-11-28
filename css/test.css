@@ -1,0 +1,672 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #DBD7D2;
+    font-family: 'Noto Sans TC', sans-serif, '微軟正黑體';
+
+}
+
+/* slide */
+.spread-out {
+    margin-top: 50vh;
+    margin-bottom: 50vh;
+}
+
+.row {
+    position: relative;
+}
+
+/* slide-text */
+.slide-text-box,
+.slide-text-box2 {
+    position: absolute;
+    left: 10%;
+    margin: auto;
+    width: 300px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #f1f1f1;
+    box-shadow: 0 0 5px #dcdcdc;
+}
+
+.slide-text-box {
+    position: absolute;
+    right: -60%;
+    margin: auto;
+}
+
+.slide-text-box p,
+.slide-text-box2 p {
+    font-size: 1.5em;
+    line-height: 42px;
+    word-spacing: .5em;
+}
+
+/* article-section */
+.article-sec {
+    margin: 0 auto;
+}
+
+.article-sec h3,
+.article-sec p {
+    width: 620px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.article-sec h3 {
+    letter-spacing: .2em;
+    padding-top: 80px;
+    font-size: 32px;
+    line-height: 48px;
+}
+
+.article-sec p {
+    padding-top: 20px;
+    font-size: 21px;
+    line-height: 42px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+}
+
+
+/* img / img note */
+figure {
+    margin: 20px auto;
+}
+.article-story-image {
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.article-story-image img {
+    width: 620px;
+    /* border: 1px solid #222; */
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+.article-story-image figcaption {
+    text-align: center;
+}
+
+#note {
+    text-align: left;
+    width: 620px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+/* RWD */
+
+@media all and (min-width:768px) and (max-width:1024px) {
+
+    .slide-text-box,
+    .slide-text-box2 {
+        left: 0;
+        margin: auto;
+    }
+
+}
+
+@media all and (min-width:549px) and (max-width:768px) {
+
+    .slide-text-box,
+    .slide-text-box2 {
+        width: 80%;
+        left: -50%;
+        margin: auto;
+    }
+
+    .slide-text-box2 {
+        width: 80%;
+        left: 10%;
+    }
+
+    .article-sec h3,
+    .article-sec p {
+        width: 530px;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* img / img note */
+    figure {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .article-story-image {
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .article-story-image img {
+        width: 530px;
+        /* border: 1px solid #222; */
+    }
+
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .article-story-image figcaption {
+        text-align: center;
+    }
+
+    #note {
+        text-align: left;
+        width: 530px;
+        margin: 0 auto;
+        padding-top: 10px;
+    }
+
+
+}
+
+@media all and (min-width:500px) and (max-width:549px) {
+    .slide-text-box {
+        width: 80%;
+        right: 10%;
+        margin: auto;
+    }
+
+    .slide-text-box2 {
+        width: 80%;
+        left: 10%;
+    }
+
+    .article-sec h3,
+    .article-sec p {
+        width: 362px;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* img / img note */
+    figure {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .article-story-image {
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .article-story-image img {
+        width: 362px;
+        /* border: 1px solid #222; */
+    }
+
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .article-story-image figcaption {
+        text-align: center;
+    }
+
+    #note {
+        text-align: left;
+        width: 362px;
+        margin: 0 auto;
+        padding-top: 10px;
+    }
+
+}
+
+@media all and (min-width:450px) and (max-width:499px) {
+    .slide-text-box {
+        width: 80%;
+        right: 20%;
+        margin: auto;
+    }
+
+    .slide-text-box2 {
+        width: 80%;
+        left: 10%;
+    }
+
+    .article-sec h3,
+    .article-sec p {
+        width: 362px;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* img / img note */
+    figure {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .article-story-image {
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .article-story-image img {
+        width: 362px;
+        /* border: 1px solid #222; */
+    }
+
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .article-story-image figcaption {
+        text-align: center;
+    }
+
+    #note {
+        text-align: left;
+        width: 362px;
+        margin: 0 auto;
+        padding-top: 10px;
+    }
+
+}
+
+/* iPhone 12 Pro Max 428px */
+@media all and (min-width:428px) and (max-width:449px) {
+    .slide-text-box {
+        width: 80%;
+        right: 20%;
+        margin: auto;
+    }
+
+    .slide-text-box2 {
+        width: 80%;
+        left: 10%;
+    }
+
+    .article-sec h3,
+    .article-sec p {
+        width: 280px;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* img / img note */
+    figure {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .article-story-image {
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .article-story-image img {
+        width: 280px;
+        /* border: 1px solid #222; */
+    }
+
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .article-story-image figcaption {
+        text-align: center;
+    }
+
+    #note {
+        text-align: left;
+        width: 280px;
+        margin: 0 auto;
+        padding-top: 10px;
+    }
+
+}
+
+/* iphone 6/7/8 plus  &  iPhone XS Max  &  iPhone 11 Pro Max 414px */
+@media all and (min-width:414px) and (max-width:427px) {
+    .slide-text-box {
+        width: 80%;
+        right: 20%;
+        margin: auto;
+    }
+
+    .slide-text-box2 {
+        width: 80%;
+        left: 10%;
+    }
+
+    .article-sec h3,
+    .article-sec p {
+        width: 280px;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* img / img note */
+    figure {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .article-story-image {
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .article-story-image img {
+        width: 280px;
+        /* border: 1px solid #222; */
+    }
+
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .article-story-image figcaption {
+        text-align: center;
+    }
+
+    #note {
+        text-align: left;
+        width: 280px;
+        margin: 0 auto;
+        padding-top: 10px;
+    }
+}
+
+/* iphone 12 & iphone 12Pro  390px */
+@media all and (min-width:390px) and (max-width:413px) {
+    .slide-text-box {
+        width: 80%;
+        right: 20%;
+        margin: auto;
+    }
+
+    .slide-text-box2 {
+        width: 80%;
+        left: 10%;
+    }
+
+    .article-sec h3,
+    .article-sec p {
+        width: 280px;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* img / img note */
+    figure {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .article-story-image {
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .article-story-image img {
+        width: 280px;
+        /* border: 1px solid #222; */
+    }
+
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .article-story-image figcaption {
+        text-align: center;
+    }
+
+    #note {
+        text-align: left;
+        width: 280px;
+        margin: 0 auto;
+        padding-top: 10px;
+    }
+}
+
+/* iphone X  &  iphone 6/7/8  &  iPhone 11 Pro  375px*/
+@media all and (min-width:375px) and (max-width:413px) {
+    .slide-text-box {
+        width: 80%;
+        right: 20%;
+        margin: auto;
+    }
+
+    .slide-text-box2 {
+        width: 80%;
+        left: 10%;
+    }
+
+    .article-sec h3,
+    .article-sec p {
+        width: 280px;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* img / img note */
+    figure {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .article-story-image {
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .article-story-image img {
+        width: 280px;
+        /* border: 1px solid #222; */
+    }
+
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .article-story-image figcaption {
+        text-align: center;
+    }
+
+    #note {
+        text-align: left;
+        width: 280px;
+        margin: 0 auto;
+        padding-top: 10px;
+    }
+}
+
+/* iphone 12 mini  360px*/
+@media all and (min-width:360px) and (max-width:374px) {
+    .slide-text-box {
+        width: 80%;
+        right: 20%;
+        margin: auto;
+    }
+
+    .slide-text-box2 {
+        width: 80%;
+        left: 10%;
+    }
+
+    .article-sec h3,
+    .article-sec p {
+        width: 280px;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* img / img note */
+    figure {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .article-story-image {
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .article-story-image img {
+        width: 280px;
+        /* border: 1px solid #222; */
+    }
+
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .article-story-image figcaption {
+        text-align: center;
+    }
+
+    #note {
+        text-align: left;
+        width: 280px;
+        margin: 0 auto;
+        padding-top: 10px;
+    }
+}
+
+@media all and (min-width:321px) and (max-width:359px) {
+    .slide-text-box {
+        width: 80%;
+        right: 20%;
+        margin: auto;
+    }
+
+    .slide-text-box2 {
+        width: 80%;
+        left: 10%;
+    }
+
+    .article-sec h3,
+    .article-sec p {
+        width: 270px;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* img / img note */
+    figure {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .article-story-image {
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .article-story-image img {
+        width: 270px;
+        /* border: 1px solid #222; */
+    }
+
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .article-story-image figcaption {
+        text-align: center;
+    }
+
+    #note {
+        text-align: left;
+        width: 270px;
+        margin: 0 auto;
+        padding-top: 10px;
+    }
+}
+
+/* 320px */
+@media all and (max-width:320px) {
+    .slide-text-box {
+        width: 80%;
+        right: 20%;
+        margin: auto;
+    }
+
+    .slide-text-box2 {
+        width: 80%;
+        left: 10%;
+    }
+
+    .article-sec h3,
+    .article-sec p {
+        width: 260px;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* img / img note */
+    figure {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .article-story-image {
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .article-story-image img {
+        width: 260px;
+        /* border: 1px solid #222; */
+    }
+
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .article-story-image figcaption {
+        text-align: center;
+    }
+
+    #note {
+        text-align: left;
+        width: 260px;
+        margin: 0 auto;
+        padding-top: 10px;
+    }
+}
