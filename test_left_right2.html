@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="./images/icon.png">
+    <title>Demo</title>
     <style>
         * {
             margin: 0;
@@ -42,7 +43,8 @@
         }
 
         h3 {
-            font-size: 3rem;
+            font-size: 32px;
+            line-height: 48px;
             font-weight: bold;
             margin-bottom: 0;
         }
@@ -55,6 +57,16 @@
             justify-content: center;
             width: 100%;
             margin: 0 auto;
+        }
+
+        .full-bac {
+            width: 100%;
+            height: 100vh;
+            background: url('./images/test_bg2.jpeg');
+            filter: saturate(0);
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
         }
 
         .text p {
@@ -80,12 +92,12 @@
 
         .locker__image {
             position: relative;
-            grid-column: col-start 2/col-end 6;
+            grid-column: col-start 1/col-end 6;
         }
 
         .locker__image img {
-           height: 80vh;
-           width: auto;
+            height: 80vh;
+            width: 90%;
             /* height: 70vh; */
             display: block;
             position: absolute;
@@ -119,47 +131,75 @@
         }
 
         .locker__section p {
-            width: 80%;
+            width: 90%;
         }
 
+        .g-hero-scroll {
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transform: translateX(-50%);
+            transition: .25s ease-in-out;
+            background-color: transparent;
+        }
+
+        .g-hero-scroll__text {
+            font-size: 15px;
+            line-height: 22px;
+            margin-bottom: 8px;
+            color: #fff;
+            text-shadow: 0 0 3px #333;
+            font-weight: 300;
+            background-color: transparent;
+        }
+
+        .g-hero-scroll__line {
+            width: 1px;
+            height: 100px;
+            background-color: #fff;
+            box-shadow: 0 0 1px #000;
+        }
     </style>
 </head>
 
 <body>
-    <div class="text">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+    <div class="full-bac" id="">
+        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
             magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
             commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
             nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum.</p>
+            anim id est laborum.</p> -->
+        <div data-v-644c3f18="" class="g-hero-scroll">
+            <div class="g-hero-scroll__text">下滑看更多</div>
+            <div class="g-hero-scroll__line"></div>
+        </div>
     </div>
     <div class="locker">
         <div class="locker__image">
             <div class="locker__container">
-                <img class="image image--1" src="images/test.jfif">
-                <img class="image image--2" src="images/test_pic1.jpg">
-                <img class="image image--3" src="images/test_pic2.jpg">
-                <img class="image image--4" src="images/test_pic3.jpg">
+                <img class="image image--1" src="images/chart1-2.svg">
+                <img class="image image--2" src="images/chart1-1.svg">
+                <!-- <img class="image image--3" src="images/chart2.svg">
+                <img class="image image--4" src="images/chart2.svg"> -->
             </div>
         </div>
         <div class="locker__content">
             <div class="locker__section locker__section--1 cb" data-swap="image--1">
-                <h3>01</h3>
+                <h3>圖表換圖</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum.</p>
+                    aliquip ex ea commodo consequat. </p>
             </div>
             <div class="locker__section locker__section--2 cb" data-swap="image--2">
                 <h3>02</h3>
-                <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                <p class="">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
                     culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
-            <div class="locker__section locker__section--3 cb" data-swap="image--3">
+            <!-- <div class="locker__section locker__section--3 cb" data-swap="image--3">
                 <h3>03</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -174,7 +214,7 @@
                     aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
                     cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
                     culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
+            </div> -->
         </div>
         <div class="threshold threshold--top"></div>
     </div>
@@ -186,6 +226,7 @@
             anim id est laborum.</p>
     </div>
 
+    <!-- parallax -->
     <script>
         if (typeof window.IntersectionObserver !== 'undefined') {
             let options = {

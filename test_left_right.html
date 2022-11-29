@@ -29,7 +29,9 @@
         body {
             padding: 0;
             margin: 0;
-            background-color: #f0f0f0;
+            background-color: #fafafa;
+            font-family: 'Noto Sans TC', sans-serif, '微軟正黑體';
+            color: #404040;
         }
 
         img {
@@ -44,15 +46,19 @@
 
 
         .scrollHalf__grupo {
-            transition: all 200ms ease-in-out;
+            transition: all .5s ease-in-out;
         }
 
         .scrollHalf__grupo__imagen {
             overflow: hidden;
         }
+
         .scrollHalf__grupo__imagen img {
-            width: 100%;
+            width: 70%;
+            text-align: center;
+            margin: 0 auto;
         }
+
         .scrollHalf__grupo__contenido {
             padding: 5rem;
         }
@@ -63,7 +69,7 @@
         }
 
         .scrollHalf__grupo[data-scroll="in"] {
-            opacity: calc(var(--visible-y)*1.9);
+            opacity: calc(var(--visible-y)*1.1);
         }
 
 
@@ -82,41 +88,283 @@
 
             .scrollHalf__grupo__imagen img {
                 min-height: 100vh;
-                min-width: 50vw;
+                min-width: 50%;
+                margin: 0 auto;
+                text-align: center;
             }
 
             .scrollHalf__grupo__contenido {
-                margin: 2vw 3vw 0 52vw;
+                margin: 2vw 3vw 0 50vw;
             }
         }
 
         .scrollHalf__grupo__contenido h3 {
+            letter-spacing: .2em;
             font-size: 32px;
             line-height: 48px;
         }
 
+        .scrollHalf__grupo__contenido {
+            padding-top: 210px;
+        }
+
         .scrollHalf__grupo__contenido p {
-            font-family: 'Noto Sans TC', sans-serif, '微軟正黑體';
             /* font-family: 'Noto Serif TC', serif, '微軟正黑體'; */
             font-size: 21px;
             /* letter-spacing: 2px; */
             line-height: 42px;
             font-weight: 400;
             margin: 0 auto;
-            color: #404040;
         }
 
-        .full-img{
+        .full-img {
             /* width: 100%;
             height: 100%; */
             /* background: url('./images/test_pic10.jpg');
             background-position: center;
             background-size: cover;
             background-attachment: fixed; */
-            background-color: #f0f0f0;
+            background-color: #fafafa;
         }
-        .full-img div{
+
+        .full-img-bac {
+            width: 100%;
+            height: 100%;
+            background: url('./images/test_bg1.jpeg');
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .full-img-bac {
             height: 100vh;
+        }
+
+        .full-img div h3,
+        .full-img div p {
+            width: 620px;
+            margin: 0 auto;
+        }
+
+        .full-img div h3 {
+            margin-top: 80px;
+            font-size: 32px;
+            line-height: 48px;
+        }
+
+        .full-img div p {
+            font-size: 1.2em;
+            line-height: 42px;
+        }
+
+        /* RWD */
+
+        @media all and (min-width:768px) and (max-width:1024px) {}
+
+        @media all and (min-width:549px) and (max-width:768px) {
+
+            .full-img div h3,
+            .full-img div p {
+                width: 530px;
+                margin: 0 auto;
+            }
+
+            .full-img div h3 {
+                margin-top: 80px;
+                font-size: 32px;
+                line-height: 48px;
+            }
+
+            .full-img div p {
+                font-size: 1.2em;
+                line-height: 42px;
+            }
+        }
+
+        @media all and (min-width:500px) and (max-width:549px) {
+
+            .full-img div h3,
+            .full-img div p {
+                width: 362px;
+                margin: 0 auto;
+            }
+
+            .full-img div h3 {
+                margin-top: 80px;
+                font-size: 32px;
+                line-height: 48px;
+            }
+
+            .full-img div p {
+                font-size: 1.2em;
+                line-height: 42px;
+            }
+        }
+
+        @media all and (min-width:450px) and (max-width:499px) {
+
+            .full-img div h3,
+            .full-img div p {
+                width: 362px;
+                margin: 0 auto;
+            }
+
+            .full-img div h3 {
+                margin-top: 80px;
+                font-size: 32px;
+                line-height: 48px;
+            }
+
+            .full-img div p {
+                font-size: 1.2em;
+                line-height: 42px;
+            }
+        }
+
+        /* iPhone 12 Pro Max 428px */
+        @media all and (min-width:428px) and (max-width:449px) {
+
+            .full-img div h3,
+            .full-img div p {
+                width: 280px;
+                margin: 0 auto;
+            }
+
+            .full-img div h3 {
+                margin-top: 80px;
+                font-size: 32px;
+                line-height: 48px;
+            }
+
+            .full-img div p {
+                font-size: 1.2em;
+                line-height: 42px;
+            }
+        }
+
+        /* iphone 6/7/8 plus  &  iPhone XS Max  &  iPhone 11 Pro Max 414px */
+        @media all and (min-width:414px) and (max-width:427px) {
+
+            .full-img div h3,
+            .full-img div p {
+                width: 280px;
+                margin: 0 auto;
+            }
+
+            .full-img div h3 {
+                margin-top: 80px;
+                font-size: 32px;
+                line-height: 48px;
+            }
+
+            .full-img div p {
+                font-size: 1.2em;
+                line-height: 42px;
+            }
+        }
+
+        /* iphone 12 & iphone 12Pro  390px */
+        @media all and (min-width:390px) and (max-width:413px) {
+
+            .full-img div h3,
+            .full-img div p {
+                width: 280px;
+                margin: 0 auto;
+            }
+
+            .full-img div h3 {
+                margin-top: 80px;
+                font-size: 32px;
+                line-height: 48px;
+            }
+
+            .full-img div p {
+                font-size: 1.2em;
+                line-height: 42px;
+            }
+        }
+
+        /* iphone X  &  iphone 6/7/8  &  iPhone 11 Pro  375px*/
+        @media all and (min-width:375px) and (max-width:413px) {
+
+            .full-img div h3,
+            .full-img div p {
+                width: 280px;
+                margin: 0 auto;
+            }
+
+            .full-img div h3 {
+                margin-top: 80px;
+                font-size: 32px;
+                line-height: 48px;
+            }
+
+            .full-img div p {
+                font-size: 1.2em;
+                line-height: 42px;
+            }
+        }
+
+        /* iphone 12 mini  360px*/
+        @media all and (min-width:360px) and (max-width:374px) {
+
+            .full-img div h3,
+            .full-img div p {
+                width: 280px;
+                margin: 0 auto;
+            }
+
+            .full-img div h3 {
+                margin-top: 80px;
+                font-size: 32px;
+                line-height: 48px;
+            }
+
+            .full-img div p {
+                font-size: 1.2em;
+                line-height: 42px;
+            }
+        }
+
+        @media all and (min-width:321px) and (max-width:359px) {
+
+            .full-img div h3,
+            .full-img div p {
+                width: 270px;
+                margin: 0 auto;
+            }
+
+            .full-img div h3 {
+                margin-top: 80px;
+                font-size: 32px;
+                line-height: 48px;
+            }
+
+            .full-img div p {
+                font-size: 1.2em;
+                line-height: 42px;
+            }
+        }
+
+        /* 320px */
+        @media all and (max-width:320px) {
+
+            .full-img div h3,
+            .full-img div p {
+                width: 260px;
+                margin: 0 auto;
+            }
+
+            .full-img div h3 {
+                margin-top: 80px;
+                font-size: 32px;
+                line-height: 48px;
+            }
+
+            .full-img div p {
+                font-size: 1.2em;
+                line-height: 42px;
+            }
         }
     </style>
 </head>
@@ -130,23 +378,20 @@
 
             <div class="scrollHalf__grupo" data-scroll>
                 <div class="scrollHalf__grupo__imagen">
-                    <img src="images/test_pic8.jpg" />
+                    <img src="images/chart3.svg" />
                 </div>
                 <div class="scrollHalf__grupo__contenido">
                     <h3>標題1<br>畫面左右分割，滾動視差敘事</h3>
                     <p> 文字文字文字文字文字，文字文字文字？文字文字，文字文字文字文字文字，文字文字。文字文字文字文字，文字文字，文字文字文字文字文字文字⋯文字，文字文字文字文字，文字文字文字文字文字文字。
-                        <br><br>
-                        文字文字文字：文字文字文字文字⋯文字文字文字文字文字，文字文字文字文字文字文字，文字文字文字文字文字文字，文字文字文字文字。
+                        <!-- <br><br>
+                        文字文字文字：文字文字文字文字⋯文字文字文字文字文字，文字文字文字文字文字文字，文字文字文字文字文字文字，文字文字文字文字。 -->
                     </p>
                 </div>
             </div>
 
             <div class="scrollHalf__grupo kk" data-scroll>
                 <div class="scrollHalf__grupo__imagen">
-                    <img src="images/test_pic4.jpg" />
-                    <!-- 
-                  De ALMA, CC BY 4.0, https://commons.wikimedia.org/w/index.php?curid=60432670 
-                -->
+                    <img src="images/chart1.svg" />
                 </div>
                 <div class="scrollHalf__grupo__contenido">
                     <h3>標題2</h3>
@@ -157,9 +402,9 @@
                 </div>
             </div>
 
-            <div class="scrollHalf__grupo" data-scroll>
+            <!-- <div class="scrollHalf__grupo" data-scroll>
                 <div class="scrollHalf__grupo__imagen">
-                    <img src="images/test_pic3.jpg" />
+                    <img src="images/chart2.svg" />
                 </div>
                 <div class="scrollHalf__grupo__contenido">
                     <h3>標題3</h3>
@@ -170,11 +415,11 @@
                     </p>
                 </div>
 
-            </div>
+            </div> -->
 
             <div class="scrollHalf__grupo" data-scroll>
-                <div class="scrollHalf__grupo__imagen">
-                    <img src="images/test_pic1.jpg" />
+                <!-- <div class="scrollHalf__grupo__imagen">
+                    <img src="images/chart3.svg" />
                 </div>
                 <div class="scrollHalf__grupo__contenido">
                     <h3>標題4</h3>
@@ -183,18 +428,23 @@
                         <br><br>
                         文字文字文字文字文字文字文字，文字文字文字文字文字，文字，文字文字文字文字文字文字。
                     </p>
-                </div>
-
+                </div> -->
             </div>
         </div> <!-- content end -->
-        
+
     </div>
 
     <section class="full-img">
-        <div style="margin: 0;"></div>
+        <div style="margin: 0;" class="full-img-bac">
+        </div>
         <div>
             <h3>標題1</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore reprehenderit eius quia quibusdam ipsum error? Voluptas, ad quisquam debitis magni id rem numquam iste temporibus nihil repudiandae quae suscipit ex?</p>
+            <p style="margin: 20px auto; margin-bottom: 80px;">
+                文字文字文字文字文字文字，文字文字文字文字文字文字文字，文字文字文字文字文字⋯文字文字文字文字文字⋯文字，文字文字文字文字。
+                <br><br>
+                文字，文字文字文字文字文字文字？文字文字文字文字，文字文字文字文字，文字，文字。
+                <br><br>
+                文字文字文字文字文字文字：文字文字文字文字文字，文字文字，文字文字文字文字文字文字文字，文字文字文字文字文字，文字文字文字文字。文字文字文字，文字文字文字文字文字文字，文字文字文字文字文字。文字文字文字文字文字，文字文字，文字文字文字文字文字，文字文字，文字文字文字文字，文字文字文字文字文字文字。
         </div>
     </section>
 
